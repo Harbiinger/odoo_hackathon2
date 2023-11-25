@@ -3,6 +3,8 @@
  */
 package officeOlympics;
 
+import officeOlympics.backend.JSONReader;
+
 public class App {
     public String getGreeting() {
         return "Hello World!";
@@ -10,5 +12,14 @@ public class App {
 
     public static void main(String[] args) {
         System.out.println(new App().getGreeting());
+
+        try {
+            JSONReader jsonReader = new JSONReader("data.json");
+            System.out.println(jsonReader.getString("name"));
+            System.out.println(jsonReader.getInt("age"));
+            System.out.println(jsonReader.getString("lastName"));
+        } catch (Exception e) {
+            System.out.println("Error: " + e);
+        }
     }
 }
