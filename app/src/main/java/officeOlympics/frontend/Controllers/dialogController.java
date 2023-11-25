@@ -2,6 +2,7 @@ package officeOlympics.frontend.Controllers;
 
 import java.io.IOException;
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -18,6 +19,8 @@ import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 import officeOlympics.App;
+import officeOlympics.backend.Choice;
+import officeOlympics.backend.Interaction;
 import officeOlympics.backend.Person;
 
 public class dialogController implements Initializable {
@@ -85,11 +88,15 @@ public class dialogController implements Initializable {
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         Person currentPerson = App.currentPerson;
+        Interaction interaction = currentPerson.getCurrentInteraction();
         backButton.setText("Back");
         inventoryButton.setText("Inventory");
-        dialogOption1.setText("Option 1");
-        dialogOption2.setText("Option 2");
-        dialogOption3.setText("Option 3");
+        dialogBox.setText(interaction.getText());
+
+        ArrayList<Choice> choices = interaction.getChoices();
+        dialogOption1.setText(choices.get(0).getValue());
+        dialogOption2.setText(choices.get(1).getValue());
+        dialogOption3.setText(choices.get(2).getValue());
         suspectNameLabel.setText(currentPerson.getFirstName() + " " + currentPerson.getLastName());
         suspectPicture.setImage(new Image("/front/"+currentPerson.getFirstName()+".png"));
         suspectDesc.setText("");

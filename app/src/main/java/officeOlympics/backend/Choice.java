@@ -29,6 +29,10 @@ public class Choice {
         return interactionDir;
     }
 
+    public String getValue() {
+        return value;
+    }
+
     public String toString() {
         String res = "";
         res += id + " | ";

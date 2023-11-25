@@ -119,7 +119,7 @@ public class susViewController  {
         al.setTitle("Accuse");
     }
 
-    public void goToChangingRoom() throws IOException {
+    public void goToChangingRoom(ActionEvent actionEvent) throws IOException {
         URL url = App.class.getResource("/front/lockerRoom.fxml");
         pane = FXMLLoader.load(url);
         stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
