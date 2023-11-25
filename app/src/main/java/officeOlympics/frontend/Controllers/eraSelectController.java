@@ -20,7 +20,6 @@ public class eraSelectController {
     private Scene scene;
     private Parent pane;
 
-
     @FXML
     private Button greekChoiceButton;
 

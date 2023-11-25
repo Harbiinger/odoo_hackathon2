@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -13,7 +14,6 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
-import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
@@ -66,6 +66,8 @@ public class dialogController implements Initializable {
     @FXML
     private TextArea dialogBox;
 
+    @FXML
+    private ImageView dialogImageHolder;
 
     // Button gestion
     private int buttonNumber = 0;
@@ -170,6 +172,7 @@ public class dialogController implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
+        dialogImageHolder.setImage(new Image("/front/"+ App.mode+"Background.png"));
         Person currentPerson = App.currentPerson;
         Interaction interaction = currentPerson.getCurrentInteraction();
         backButton.setText("Back");

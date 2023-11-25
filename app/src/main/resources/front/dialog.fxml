@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextArea?>
@@ -14,12 +15,12 @@
 
 <StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="officeOlympics.frontend.Controllers.dialogController">
    <children>
-      <ImageView fitHeight="720.0" fitWidth="1280.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="dialogImageHolder" fitHeight="720.0" fitWidth="1280.0" pickOnBounds="true" preserveRatio="true" />
       <BorderPane prefHeight="200.0" prefWidth="200.0">
          <top>
             <Pane prefHeight="99.0" prefWidth="1280.0" BorderPane.alignment="CENTER">
                <children>
-                  <Button fx:id="backButton" cancelButton="true" layoutX="48.0" layoutY="26.0" mnemonicParsing="false" onAction="#back" prefHeight="48.0" prefWidth="85.0" style="-fx-border-radius: 15; -fx-border-color: #1a0902; -fx-background-color: #965238; -fx-background-radius: 15;" text="Back">
+                  <Button fx:id="backButton" cancelButton="true" layoutX="48.0" layoutY="26.0" mnemonicParsing="false" onAction="#back" prefHeight="48.0" prefWidth="85.0" style="-fx-background-color: #965238; -fx-border-color: #1a0902; -fx-border-radius: 16; -fx-border-width: 4; -fx-background-radius: 64;" text="Back" textFill="WHITE">
                      <font>
                         <Font name="System Bold" size="16.0" />
                      </font>
@@ -80,6 +81,9 @@
                      <font>
                         <Font name="JetBrains Mono Regular Nerd Font Complete" size="13.0" />
                      </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
                   </Button>
                   <Button fx:id="dialogOption2" alignment="BASELINE_LEFT" focusTraversable="false" mnemonicParsing="false" onAction="#chooseOption2" prefHeight="26.0" prefWidth="708.0" style="-fx-border-radius: 15; -fx-border-color: #1a0902; -fx-background-color: #965238; -fx-background-radius: 15;" text="Button" textFill="WHITE" wrapText="true" VBox.vgrow="ALWAYS">
                      <VBox.margin>
@@ -88,6 +92,9 @@
                      <font>
                         <Font name="JetBrains Mono Regular Nerd Font Complete" size="13.0" />
                      </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
                   </Button>
                   <Button fx:id="dialogOption3" alignment="BASELINE_LEFT" focusTraversable="false" mnemonicParsing="false" onAction="#chooseOption3" prefHeight="26.0" prefWidth="708.0" style="-fx-border-radius: 15; -fx-border-color: #1a0902; -fx-background-color: #965238; -fx-background-radius: 15;" text="Button" textFill="WHITE" wrapText="true" VBox.vgrow="ALWAYS">
                      <VBox.margin>
@@ -96,6 +103,9 @@
                      <font>
                         <Font name="JetBrains Mono Regular Nerd Font Complete" size="13.0" />
                      </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
                   </Button>
                   <Button fx:id="dialogOption4" alignment="BASELINE_LEFT" focusTraversable="false" mnemonicParsing="false" onAction="#chooseOption4" prefHeight="26.0" prefWidth="725.0" style="-fx-border-radius: 15; -fx-border-color: #1a0902; -fx-background-color: #965238; -fx-background-radius: 15;" text="Button" textFill="WHITE" wrapText="true" VBox.vgrow="ALWAYS">
                      <VBox.margin>
@@ -104,6 +114,9 @@
                      <font>
                         <Font name="JetBrains Mono Regular Nerd Font Complete" size="13.0" />
                      </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
                   </Button>
                   <Button fx:id="dialogOption5" alignment="BASELINE_LEFT" focusTraversable="false" mnemonicParsing="false" onAction="#chooseOption5" prefHeight="26.0" prefWidth="745.0" style="-fx-border-radius: 15; -fx-border-color: #1a0902; -fx-background-color: #965238; -fx-background-radius: 15;" text="Button" textFill="WHITE" wrapText="true" VBox.vgrow="ALWAYS">
                      <VBox.margin>
@@ -112,6 +125,9 @@
                      <font>
                         <Font name="JetBrains Mono Regular Nerd Font Complete" size="13.0" />
                      </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
                   </Button>
                </children>
                <padding>
