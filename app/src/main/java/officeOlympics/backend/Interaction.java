@@ -4,26 +4,25 @@ import java.util.ArrayList;
 
 public class Interaction {
 
-    private final ArrayList<Choice> choices;
-    private Person person;
+    private final int id;
+    private ArrayList<Choice> choices;
+    private final String text;
 
-    public Interaction(ArrayList<Choice> choices, Person person) {
+    public Interaction(int id, ArrayList<Choice> choices, String text) {
+        this.id = id;
         this.choices = choices;
-        this.person = person;
+        this.text = text;
     }
 
-    public void makeAChoice(int choiceNumber){
-        Choice choice = choices.get(choiceNumber);
-        ArrayList<Choice> personChoices = person.getChoices();
+    public int getId() {
+        return id;
+    }
 
-        try{
-            if (personChoices.contains(choice)){
-                //TODO make an action
-            }
-        }
-        catch (Exception e){
-            System.out.println("Choice with id " + choice.getId() + " does not belong to Mr. " + person.getLastName());
-        }
+    public ArrayList<Choice> getChoices() {
+        return choices;
+    }
 
+    public String getText() {
+        return text;
     }
 }

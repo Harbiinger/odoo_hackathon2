@@ -7,20 +7,25 @@ public class Person {
     private String lastName;
     private String firstName;
     private String profession;
-    private ArrayList<Choice> choices;
+    private ArrayList<Interaction> interactions;
 
-    public Person(String lastName, String firstName, String profession, ArrayList<Choice> choices) {
+    public Person(String lastName, String firstName, String profession, ArrayList<Interaction> interactions) {
         this.lastName = lastName;
         this.firstName = firstName;
         this.profession = profession;
-        this.choices = choices;
+        this.interactions = interactions;
     }
 
-    public ArrayList<Choice> getChoices() {
-        return choices;
+    public ArrayList<Interaction> getInteractions() {
+        return interactions;
     }
 
     public String getLastName() {
         return lastName;
+    }
+
+    public Interaction makeAChoice(int choiceNumber){
+        // When a choice is made it return the interaction related to this choice
+        return interactions.get(choiceNumber);
     }
 }
