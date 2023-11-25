@@ -147,7 +147,7 @@
                                     <Image url="@sus4.png" />
                                  </image>
                               </ImageView>
-                              <Label fx:id="Suspect4Name" text="Suspect4">
+                              <Label fx:id="suspect4Name" text="Suspect4">
                                  <VBox.margin>
                                     <Insets top="16.0" />
                                  </VBox.margin>

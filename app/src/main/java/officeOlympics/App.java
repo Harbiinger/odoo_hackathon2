@@ -18,10 +18,12 @@ public class App extends Application {
     public static ArrayList<Person> peopleList;
     public static Person currentPerson;
     public static Stage stage;
+    public static String mode = "modern"; // ou antique
 
     public static void main(String[] args) {
         Game game = new Game("jo.json"); 
         peopleList = game.getPersons();
+        System.out.println(peopleList.size());
         launch(args);
     }
 

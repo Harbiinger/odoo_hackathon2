@@ -11,12 +11,14 @@ import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 import officeOlympics.App;
+import officeOlympics.backend.Person;
 
 public class dialogController implements Initializable {
 
@@ -46,10 +48,13 @@ public class dialogController implements Initializable {
     private TextField dialogOption3;
 
     @FXML
-    private Label suspectName;
+    private Label suspectNameLabel;
 
     @FXML
     private Label suspectDesc;
+
+    @FXML
+    private TextArea dialogBox;
 
 
     public void back(ActionEvent actionEvent) throws IOException {
@@ -79,12 +84,14 @@ public class dialogController implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
+        Person currentPerson = App.currentPerson;
         backButton.setText("Back");
         inventoryButton.setText("Inventory");
         dialogOption1.setText("Option 1");
         dialogOption2.setText("Option 2");
         dialogOption3.setText("Option 3");
-        suspectName.setText("Suspect Name");
-        suspectDesc.setText("Suspect Description");
+        suspectNameLabel.setText(currentPerson.getFirstName() + " " + currentPerson.getLastName());
+        suspectPicture.setImage(new Image("/front/"+currentPerson.getFirstName()+".png"));
+        suspectDesc.setText("");
     }
 }

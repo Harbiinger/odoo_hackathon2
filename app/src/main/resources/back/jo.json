@@ -227,7 +227,8 @@
             {
               "id": 1,
               "interactionDir": 5,
-              "value": "Do you think someone could have cheat during the competition ?"
+              "value": "Do you think someone could have cheat during the competition ?",
+              "isLocked": false
             },
             {
               "id": 2,
@@ -285,7 +286,7 @@
           "choices": [
             {
               "id": 0,
-              "interactionDur": -1,
+              "interactionDir": -1,
               "value": "Interesting, thank you. [leave]",
               "isLocked": false
             }
@@ -297,7 +298,7 @@
           "choices": [
             {
               "id": 0,
-              "interactionDur": -1,
+              "interactionDir": -1,
               "value": "Interesting, thank you. [leave]",
               "isLocked": false
             }
@@ -309,8 +310,9 @@
           "choices": [
             {
               "id": 0,
-              "interactionDur": -1,
-              "value": "That would be all, thank you [leave]"
+              "interactionDir": -1,
+              "value": "That would be all, thank you [leave]",
+              "isLocked": false
             }
           ]
         }
