@@ -32,6 +32,11 @@
               "id": 3,
               "interactionDir" : 4,
               "value" : "Do you have information about potential cheaters during the event ?",
+              "event": {
+                "name": "Ackermann",
+                "interactionId": 0,
+                "choiceId": 1
+              },
               "isLocked" : false
             },
             {

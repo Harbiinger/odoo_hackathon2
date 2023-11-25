@@ -66,6 +66,47 @@ public class dialogController implements Initializable {
     private TextArea dialogBox;
 
 
+    // Button gestion
+    private int buttonNumber = 0;
+
+
+    public void clearButtons() {
+        buttonNumber = 0;
+        dialogOption1.setVisible(false);
+        dialogOption2.setVisible(false);
+        dialogOption3.setVisible(false);
+        dialogOption4.setVisible(false);
+        dialogOption5.setVisible(false);
+    }
+
+    public void addButton(Choice text) {
+        switch (buttonNumber++) {
+            case 0:
+                dialogOption1.setVisible(true);
+                dialogOption1.setText(text.getValue());
+                break;
+            case 1:
+                dialogOption2.setVisible(true);
+                dialogOption2.setText(text.getValue());
+                break;
+            case 2:
+                dialogOption3.setVisible(true);
+                dialogOption3.setText(text.getValue());
+                break;
+            case 3:
+                dialogOption4.setVisible(true);
+                dialogOption4.setText(text.getValue());
+                break;
+            case 4:
+                dialogOption5.setVisible(true);
+                dialogOption5.setText(text.getValue());
+                break;
+            default:
+                break;
+        }
+    }
+
+
     public void back(ActionEvent actionEvent) throws IOException {
         URL url = App.class.getResource("/front/susView.fxml");
         pane = FXMLLoader.load(url);
@@ -107,6 +148,11 @@ public class dialogController implements Initializable {
         dialogBox.setText(currentPerson.getCurrentInteraction().getText());
         ArrayList<Choice> choices = currentPerson.getCurrentInteraction().getChoices();
         dialogOption1.setText(choices.get(choiceIndex).getValue());
+        clearButtons();
+
+        for(Choice choice : choices){
+            addButton(choice);
+        }
     }
 
     @Override
@@ -117,54 +163,11 @@ public class dialogController implements Initializable {
         inventoryButton.setText("Inventory");
         dialogBox.setText(interaction.getText());
 
+        clearButtons();
+
         ArrayList<Choice> choices = interaction.getChoices();
-        int numberOfButtons = 5;
-        int i = 0;
-        while (i < numberOfButtons){
-            if (choices.get(i) != null){
-                switch (i){
-                    case 0:
-                        dialogOption1.setText(choices.get(i).getValue());
-                        break;
-                    case 1:
-                        dialogOption2.setText(choices.get(i).getValue());
-                        break;
-                    case 2:
-                        dialogOption3.setText(choices.get(i).getValue());
-                        break;
-                    case 3:
-                        dialogOption4.setText(choices.get(i).getValue());
-                        break;
-                    case 4:
-                        dialogOption5.setText(choices.get(i).getValue());
-                        break;
-                    default:
-                        break;
-                }
-                i ++;
-            }
-            else{
-                switch (i){
-                    case 0:
-                        dialogOption1.setVisible(false);
-                        break;
-                    case 1:
-                        dialogOption2.setVisible(false);
-                        break;
-                    case 2:
-                        dialogOption3.setVisible(false);
-                        break;
-                    case 3:
-                        dialogOption4.setVisible(false);
-                        break;
-                    case 4:
-                        dialogOption5.setVisible(false);
-                        break;
-                    default:
-                        break;
-                }
-                i ++;
-            }
+        for (Choice choice : choices) {
+            addButton(choice);
         }
         suspectNameLabel.setText(currentPerson.getFirstName() + " " + currentPerson.getLastName());
         suspectPicture.setImage(new Image("/front/"+currentPerson.getFirstName()+".png"));
