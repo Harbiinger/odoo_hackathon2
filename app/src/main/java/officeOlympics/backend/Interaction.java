@@ -18,7 +18,7 @@ public class Interaction {
 
         try{
             if (personChoices.contains(choice)){
-
+                //TODO make an action
             }
         }
         catch (Exception e){
