@@ -3,7 +3,6 @@ package officeOlympics.backend;
 import java.util.ArrayList;
 
 public class Choice {
-
     private final int id;
     private final int interactionDir;
     private boolean isLock;
@@ -22,7 +21,19 @@ public class Choice {
         return id;
     }
 
+    public boolean isLock() {
+        return isLock;
+    }
+
     public int getInteractionDir() {
         return interactionDir;
+    }
+
+    public String toString() {
+        String res = "";
+        res += id + " | ";
+        res += "val = " + value + " | ";
+        res += "direction= " + interactionDir;
+        return res;
     }
 }

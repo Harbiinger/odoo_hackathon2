@@ -11,8 +11,11 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.shape.Rectangle;
 import javafx.stage.Stage;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import officeOlympics.App;
 
 public class susViewController  {
@@ -41,8 +44,63 @@ public class susViewController  {
     @FXML
     private Button inventoryButton;
 
-    public void talktTo() {
-        System.out.println("Talk to");
+    @FXML
+    private ImageView imageHolder1;
+
+    @FXML
+    private ImageView imageHolder2;
+
+    @FXML
+    private ImageView imageHolder3;
+
+    @FXML
+    private ImageView imageHolder4;
+
+    @FXML
+    private Label suspect1Name;
+
+    @FXML
+    private Label suspect2Name;
+
+    @FXML
+    private Label suspect3Name;
+
+    @FXML
+    private Label suspect4Name;
+
+    public void initialize() {
+        imageHolder1.setImage(new Image("/front/"+App.peopleList.get(0).getFirstName()+".png"));
+        suspect1Name.setText(App.peopleList.get(0).getFirstName() + " " + App.peopleList.get(0).getLastName());
+        imageHolder2.setImage(new Image("/front/"+App.peopleList.get(1).getFirstName()+".png"));
+        suspect2Name.setText(App.peopleList.get(1).getFirstName() + " " + App.peopleList.get(1).getLastName());
+        //imageHolder3.setImage(new Image("/front/"+App.peopleList.get(2).getFirstName()+".png"));
+        //suspect3Name.setText(App.peopleList.get(2).getFirstName() + " " + App.peopleList.get(2).getLastName());
+        //imageHolder4.setImage(new Image("/front/"+App.peopleList.get(3).getFirstName()+".png"));
+        //suspect4Name.setText(App.peopleList.get(3).getFirstName() + " " + App.peopleList.get(3).getLastName());
+    }
+
+    public void talkTo1() {
+        App.currentPerson = App.peopleList.get(0);
+        try {
+            goToDialog();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void talkTo2() {
+        App.currentPerson = App.peopleList.get(1);
+        try {
+            goToDialog();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void talkTo3() {
+    }
+
+    public void talkTo4() {
     }
 
     public void displayInventory() {
@@ -54,7 +112,7 @@ public class susViewController  {
         al.setTitle("Accuse");
     }
 
-    public void goToChangingRoom(ActionEvent actionEvent) throws IOException {
+    public void goToChangingRoom() throws IOException {
         URL url = App.class.getResource("/front/lockerRoom.fxml");
         pane = FXMLLoader.load(url);
         stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
@@ -63,6 +121,14 @@ public class susViewController  {
         stage.show();
     }
 
+    public void goToDialog() throws IOException {
+        URL url = App.class.getResource("/front/dialog.fxml");
+        pane = FXMLLoader.load(url);
+        stage = App.stage;
+        scene = new Scene(pane);
+        stage.setScene(scene);
+        stage.show();
+    }
 
 
 }

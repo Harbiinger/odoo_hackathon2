@@ -26,6 +26,8 @@ dependencies {
     implementation("com.google.guava:guava:31.1-jre")
 
     implementation("com.googlecode.json-simple:json-simple:1.1.1")
+
+    implementation("com.fasterxml.jackson.dataformat:jackson-dataformat-xml:2.13.1")
 }
 
 // Apply a specific Java toolchain to ease working on different environments.
@@ -34,6 +36,7 @@ java {
         languageVersion.set(JavaLanguageVersion.of(17))
     }
 }
+
 
 javafx {
     version = "17"

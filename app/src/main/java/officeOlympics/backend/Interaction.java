@@ -18,8 +18,18 @@ public class Interaction {
         return id;
     }
 
+    /**
+     * Return the list of choices with only the unlocked ones.
+     */
     public ArrayList<Choice> getChoices() {
-        return choices;
+        // Return the list of choices but only the unlocked ones
+        ArrayList<Choice> res = new ArrayList<>();
+        for(Choice choice: choices) {
+            if (!choice.isLock()) {
+                res.add(choice);
+            }
+        }
+        return res;
     }
 
     public String getText() {

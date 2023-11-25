@@ -9,15 +9,26 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
+import java.util.ArrayList;
+
+import officeOlympics.backend.*;
 
 public class App extends Application {
+
+    public static ArrayList<Person> peopleList;
+    public static Person currentPerson;
+    public static Stage stage;
+
     public static void main(String[] args) {
+        Game game = new Game("jo.json"); 
+        peopleList = game.getPersons();
         launch(args);
     }
 
     @Override
     public void start(Stage primaryStage){
         Pane root;
+        stage = primaryStage;
 
         try {
             URL url = App.class.getResource("/front/susView.fxml");
@@ -34,5 +45,6 @@ public class App extends Application {
             throw new RuntimeException(e);
         }
 
-    }   
+    }
 }
+
