@@ -1,0 +1,15 @@
+{
+    "java.compile.nullAnalysis.mode": "automatic",
+    "java.configuration.updateBuildConfiguration": "interactive",
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "/home/bolbobul/Téléchargements/openjfx-17.0.9_linux-x64_bin-sdk/javafx-sdk-17.0.9/lib/javafx.controls.jar",
+        "/home/bolbobul/Téléchargements/openjfx-17.0.9_linux-x64_bin-sdk/javafx-sdk-17.0.9/lib/javafx.fxml.jar",
+        "/home/bolbobul/Téléchargements/openjfx-17.0.9_linux-x64_bin-sdk/javafx-sdk-17.0.9/lib/javafx.media.jar",
+        "/home/bolbobul/Téléchargements/openjfx-17.0.9_linux-x64_bin-sdk/javafx-sdk-17.0.9/lib/javafx.web.jar",
+        "/home/bolbobul/Téléchargements/openjfx-17.0.9_linux-x64_bin-sdk/javafx-sdk-17.0.9/lib/javafx-swt.jar",
+        "/home/bolbobul/Téléchargements/openjfx-17.0.9_linux-x64_bin-sdk/javafx-sdk-17.0.9/lib/javafx.base.jar",
+        "/home/bolbobul/Téléchargements/openjfx-17.0.9_linux-x64_bin-sdk/javafx-sdk-17.0.9/lib/javafx.graphics.jar",
+        "/home/bolbobul/Téléchargements/openjfx-17.0.9_linux-x64_bin-sdk/javafx-sdk-17.0.9/lib/javafx.swing.jar"
+    ]
+}

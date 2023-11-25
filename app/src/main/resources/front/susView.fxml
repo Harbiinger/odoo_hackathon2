@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="officeOlympics.frontend.Controllers.susViewController">
+   <children>
+      <ImageView fx:id="susBackgrnd" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+      <BorderPane prefHeight="200.0" prefWidth="200.0">
+         <center>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <StackPane alignment="TOP_CENTER" prefHeight="150.0" prefWidth="200.0">
+                     <children>
+                        <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <ImageView fitHeight="252.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" VBox.vgrow="NEVER">
+                                 <VBox.margin>
+                                    <Insets bottom="16.0" left="16.0" right="16.0" />
+                                 </VBox.margin>
+                                 <image>
+                                    <Image url="@sus1.png" />
+                                 </image>
+                                 <viewport>
+                                    <Rectangle2D minX="200.0" minY="252.0" width="200.0" />
+                                 </viewport>
+                              </ImageView>
+                              <Label fx:id="suspect1Name" text="Suspect1">
+                                 <VBox.margin>
+                                    <Insets top="16.0" />
+                                 </VBox.margin>
+                              </Label>
+                           </children>
+                           <padding>
+                              <Insets top="64.0" />
+                           </padding>
+                        </VBox>
+                        <Rectangle fx:id="suspect1Button" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="301.0" onMouseClicked="#talktTo" stroke="TRANSPARENT" strokeType="INSIDE" width="200.0">
+                           <StackPane.margin>
+                              <Insets top="64.0" />
+                           </StackPane.margin>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Rectangle>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </StackPane>
+                  <StackPane alignment="TOP_CENTER" prefHeight="150.0" prefWidth="200.0">
+                     <children>
+                        <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <ImageView fitHeight="252.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                 <VBox.margin>
+                                    <Insets bottom="16.0" left="16.0" right="16.0" />
+                                 </VBox.margin>
+                                 <image>
+                                    <Image url="@sus2.png" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="suspect2Name" text="Suspect2">
+                                 <VBox.margin>
+                                    <Insets top="16.0" />
+                                 </VBox.margin>
+                              </Label>
+                           </children>
+                           <padding>
+                              <Insets top="64.0" />
+                           </padding>
+                        </VBox>
+                        <Rectangle fx:id="suspect2Button" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="301.0" onMouseClicked="#talktTo" stroke="TRANSPARENT" strokeType="INSIDE" width="200.0">
+                           <StackPane.margin>
+                              <Insets top="64.0" />
+                           </StackPane.margin>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Rectangle>
+                     </children>
+                  </StackPane>
+                  <StackPane alignment="TOP_CENTER" prefHeight="150.0" prefWidth="200.0">
+                     <children>
+                        <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <ImageView fitHeight="252.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                 <VBox.margin>
+                                    <Insets bottom="16.0" left="16.0" right="16.0" />
+                                 </VBox.margin>
+                                 <image>
+                                    <Image url="@sus3.png" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="suspect3Name" text="Suspect3">
+                                 <VBox.margin>
+                                    <Insets top="16.0" />
+                                 </VBox.margin>
+                              </Label>
+                           </children>
+                           <padding>
+                              <Insets top="64.0" />
+                           </padding>
+                        </VBox>
+                        <Rectangle fx:id="suspect3Button" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="301.0" onMouseClicked="#talktTo" stroke="TRANSPARENT" strokeType="INSIDE" width="200.0">
+                           <StackPane.margin>
+                              <Insets top="64.0" />
+                           </StackPane.margin>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Rectangle>
+                     </children>
+                  </StackPane>
+                  <StackPane alignment="TOP_CENTER" prefHeight="150.0" prefWidth="200.0">
+                     <children>
+                        <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <ImageView fitHeight="252.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                 <VBox.margin>
+                                    <Insets bottom="16.0" left="16.0" right="16.0" />
+                                 </VBox.margin>
+                                 <image>
+                                    <Image url="@sus4.png" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="Suspect4Name" text="Suspect4">
+                                 <VBox.margin>
+                                    <Insets top="16.0" />
+                                 </VBox.margin>
+                              </Label>
+                           </children>
+                           <padding>
+                              <Insets top="64.0" />
+                           </padding>
+                        </VBox>
+                        <Rectangle fx:id="suspect4Button" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="301.0" onMouseClicked="#talktTo" stroke="TRANSPARENT" strokeType="INSIDE" width="200.0">
+                           <StackPane.margin>
+                              <Insets top="64.0" />
+                           </StackPane.margin>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Rectangle>
+                     </children>
+                  </StackPane>
+               </children>
+            </HBox>
+         </center>
+         <top>
+            <Pane prefHeight="90.0" prefWidth="1280.0" BorderPane.alignment="TOP_CENTER">
+               <children>
+                  <Button fx:id="inventoryButton" layoutX="23.0" layoutY="29.0" mnemonicParsing="false" onAction="#displayInventory" text="i" textAlignment="CENTER">
+                     <font>
+                        <Font name="JetBrains Mono Regular Nerd Font Complete" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="accuseButton" layoutX="1117.0" layoutY="27.0" mnemonicParsing="false" onAction="#accuse" text="Accuse">
+                     <font>
+                        <Font name="JetBrains Mono Regular Nerd Font Complete" size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+         </top>
+         <bottom>
+            <Pane prefHeight="102.0" prefWidth="1280.0" BorderPane.alignment="BOTTOM_CENTER">
+               <children>
+                  <Button fx:id="changingRoomButton" alignment="CENTER" contentDisplay="CENTER" layoutX="514.0" layoutY="33.0" mnemonicParsing="false" onAction="#goToChangingRoom" text="Inspect the changing room" textAlignment="CENTER">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+         </bottom>
+      </BorderPane>
+   </children>
+</StackPane>
