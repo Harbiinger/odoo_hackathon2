@@ -333,6 +333,12 @@
               "interactionDir": -1,
               "value": "General kenobi [leave]",
               "isLocked": false
+            },
+            {
+              "id": 1,
+              "interactionDir": -1,
+              "value": "oui",
+              "isLocked": true
             }
           ]
         }

@@ -119,8 +119,9 @@ public class dialogController implements Initializable {
 
         ArrayList<Choice> choices = interaction.getChoices();
         dialogOption1.setText(choices.get(0).getValue());
-        dialogOption2.setText(choices.get(1).getValue());
-        dialogOption3.setText(choices.get(2).getValue());
+        if (choices.size() > 1) {
+            dialogOption2.setText(choices.get(1).getValue());
+        }
         dialogOption4.setText(choices.get(3).getValue());
         dialogOption5.setText(choices.get(4).getValue());
         suspectNameLabel.setText(currentPerson.getFirstName() + " " + currentPerson.getLastName());

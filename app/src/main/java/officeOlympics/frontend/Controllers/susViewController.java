@@ -132,9 +132,21 @@ public class susViewController  {
     }
 
     public void talkTo3() {
+        App.currentPerson = App.peopleList.get(2);
+        try {
+            goToDialog();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     public void talkTo4() {
+        App.currentPerson = App.peopleList.get(3);
+        try {
+            goToDialog();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     public void displayInventory() {
