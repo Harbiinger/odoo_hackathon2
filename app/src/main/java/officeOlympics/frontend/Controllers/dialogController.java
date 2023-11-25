@@ -118,12 +118,54 @@ public class dialogController implements Initializable {
         dialogBox.setText(interaction.getText());
 
         ArrayList<Choice> choices = interaction.getChoices();
-        dialogOption1.setText(choices.get(0).getValue());
-        if (choices.size() > 1) {
-            dialogOption2.setText(choices.get(1).getValue());
+        int numberOfButtons = 5;
+        int i = 0;
+        while (i < numberOfButtons){
+            if (choices.get(i) != null){
+                switch (i){
+                    case 0:
+                        dialogOption1.setText(choices.get(i).getValue());
+                        break;
+                    case 1:
+                        dialogOption2.setText(choices.get(i).getValue());
+                        break;
+                    case 2:
+                        dialogOption3.setText(choices.get(i).getValue());
+                        break;
+                    case 3:
+                        dialogOption4.setText(choices.get(i).getValue());
+                        break;
+                    case 4:
+                        dialogOption5.setText(choices.get(i).getValue());
+                        break;
+                    default:
+                        break;
+                }
+                i ++;
+            }
+            else{
+                switch (i){
+                    case 0:
+                        dialogOption1.setVisible(false);
+                        break;
+                    case 1:
+                        dialogOption2.setVisible(false);
+                        break;
+                    case 2:
+                        dialogOption3.setVisible(false);
+                        break;
+                    case 3:
+                        dialogOption4.setVisible(false);
+                        break;
+                    case 4:
+                        dialogOption5.setVisible(false);
+                        break;
+                    default:
+                        break;
+                }
+                i ++;
+            }
         }
-        dialogOption4.setText(choices.get(3).getValue());
-        dialogOption5.setText(choices.get(4).getValue());
         suspectNameLabel.setText(currentPerson.getFirstName() + " " + currentPerson.getLastName());
         suspectPicture.setImage(new Image("/front/"+currentPerson.getFirstName()+".png"));
         suspectDesc.setText("");
