@@ -17,6 +17,7 @@ import javafx.stage.Stage;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import officeOlympics.App;
+import javafx.scene.effect.BoxBlur;
 
 public class susViewController  {
 
@@ -73,14 +74,16 @@ public class susViewController  {
 
     public void initialize() {
         susBackground.setImage(new Image("/front/"+ App.mode+"Background.png"));
+        BoxBlur blur = new BoxBlur(5, 5, 3);
+        susBackground.setEffect(blur);
         imageHolder1.setImage(new Image("/front/"+App.peopleList.get(0).getFirstName()+".png"));
         suspect1Name.setText(App.peopleList.get(0).getFirstName() + " " + App.peopleList.get(0).getLastName());
         imageHolder2.setImage(new Image("/front/"+App.peopleList.get(1).getFirstName()+".png"));
         suspect2Name.setText(App.peopleList.get(1).getFirstName() + " " + App.peopleList.get(1).getLastName());
-        //imageHolder3.setImage(new Image("/front/"+App.peopleList.get(2).getFirstName()+".png"));
-        //suspect3Name.setText(App.peopleList.get(2).getFirstName() + " " + App.peopleList.get(2).getLastName());
-        //imageHolder4.setImage(new Image("/front/"+App.peopleList.get(3).getFirstName()+".png"));
-        //suspect4Name.setText(App.peopleList.get(3).getFirstName() + " " + App.peopleList.get(3).getLastName());
+        imageHolder3.setImage(new Image("/front/"+App.peopleList.get(2).getFirstName()+".png"));
+        suspect3Name.setText(App.peopleList.get(2).getFirstName() + " " + App.peopleList.get(2).getLastName());
+        imageHolder4.setImage(new Image("/front/"+App.peopleList.get(3).getFirstName()+".png"));
+        suspect4Name.setText(App.peopleList.get(3).getFirstName() + " " + App.peopleList.get(3).getLastName());
     }
 
     public void talkTo1() {

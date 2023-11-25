@@ -23,6 +23,7 @@ public class App extends Application {
     public static void main(String[] args) {
         Game game = new Game("jo.json"); 
         peopleList = game.getPersons();
+        System.out.println(peopleList.size());
         launch(args);
     }
 
