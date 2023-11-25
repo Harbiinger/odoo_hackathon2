@@ -73,7 +73,7 @@
                         <Insets bottom="16.0" top="16.0" />
                      </VBox.margin>
                   </TextArea>
-                  <Button alignment="BASELINE_LEFT" focusTraversable="false" mnemonicParsing="false" prefHeight="26.0" prefWidth="722.0" style="-fx-border-radius: 15; -fx-border-color: #1a0902; -fx-background-color: #965238; -fx-background-radius: 15;"  text="Button" textFill="WHITE" wrapText="true" VBox.vgrow="ALWAYS">
+                  <Button fx:id="dialogOption1" alignment="BASELINE_LEFT" focusTraversable="false" mnemonicParsing="false" onAction="#chooseOption1" prefHeight="26.0" prefWidth="722.0" style="-fx-border-radius: 15; -fx-border-color: #1a0902; -fx-background-color: #965238; -fx-background-radius: 15;" text="Button" textFill="WHITE" wrapText="true" VBox.vgrow="ALWAYS">
                      <VBox.margin>
                         <Insets bottom="16.0" top="16.0" />
                      </VBox.margin>
@@ -81,7 +81,7 @@
                         <Font name="JetBrains Mono Regular Nerd Font Complete" size="13.0" />
                      </font>
                   </Button>
-                  <Button alignment="BASELINE_LEFT" focusTraversable="false" mnemonicParsing="false" prefHeight="26.0" prefWidth="708.0" style="-fx-border-radius: 15; -fx-border-color: #1a0902; -fx-background-color: #965238; -fx-background-radius: 15;" text="Button" textFill="WHITE" wrapText="true" VBox.vgrow="ALWAYS">
+                  <Button fx:id="dialogOption2" alignment="BASELINE_LEFT" focusTraversable="false" mnemonicParsing="false" onAction="#chooseOption2" prefHeight="26.0" prefWidth="708.0" style="-fx-border-radius: 15; -fx-border-color: #1a0902; -fx-background-color: #965238; -fx-background-radius: 15;" text="Button" textFill="WHITE" wrapText="true" VBox.vgrow="ALWAYS">
                      <VBox.margin>
                         <Insets bottom="16.0" top="16.0" />
                      </VBox.margin>
@@ -89,7 +89,7 @@
                         <Font name="JetBrains Mono Regular Nerd Font Complete" size="13.0" />
                      </font>
                   </Button>
-                  <Button alignment="BASELINE_LEFT" focusTraversable="false" mnemonicParsing="false" prefHeight="26.0" prefWidth="708.0" style="-fx-border-radius: 15; -fx-border-color: #1a0902; -fx-background-color: #965238; -fx-background-radius: 15;" text="Button" textFill="WHITE" wrapText="true" VBox.vgrow="ALWAYS">
+                  <Button fx:id="dialogOption3" alignment="BASELINE_LEFT" focusTraversable="false" mnemonicParsing="false" onAction="#chooseOption3" prefHeight="26.0" prefWidth="708.0" style="-fx-border-radius: 15; -fx-border-color: #1a0902; -fx-background-color: #965238; -fx-background-radius: 15;" text="Button" textFill="WHITE" wrapText="true" VBox.vgrow="ALWAYS">
                      <VBox.margin>
                         <Insets bottom="16.0" top="16.0" />
                      </VBox.margin>
@@ -97,7 +97,7 @@
                         <Font name="JetBrains Mono Regular Nerd Font Complete" size="13.0" />
                      </font>
                   </Button>
-                  <Button alignment="BASELINE_LEFT" focusTraversable="false" mnemonicParsing="false" prefHeight="26.0" prefWidth="725.0" style="-fx-border-radius: 15; -fx-border-color: #1a0902; -fx-background-color: #965238; -fx-background-radius: 15;" text="Button" textFill="WHITE" wrapText="true" VBox.vgrow="ALWAYS">
+                  <Button fx:id="dialogOption4" alignment="BASELINE_LEFT" focusTraversable="false" mnemonicParsing="false" onAction="#chooseOption4" prefHeight="26.0" prefWidth="725.0" style="-fx-border-radius: 15; -fx-border-color: #1a0902; -fx-background-color: #965238; -fx-background-radius: 15;" text="Button" textFill="WHITE" wrapText="true" VBox.vgrow="ALWAYS">
                      <VBox.margin>
                         <Insets bottom="16.0" top="16.0" />
                      </VBox.margin>
@@ -105,7 +105,7 @@
                         <Font name="JetBrains Mono Regular Nerd Font Complete" size="13.0" />
                      </font>
                   </Button>
-                  <Button alignment="BASELINE_LEFT" focusTraversable="false" mnemonicParsing="false" prefHeight="26.0" prefWidth="745.0" style="-fx-border-radius: 15; -fx-border-color: #1a0902; -fx-background-color: #965238; -fx-background-radius: 15;" text="Button" textFill="WHITE" wrapText="true" VBox.vgrow="ALWAYS">
+                  <Button fx:id="dialogOption5" alignment="BASELINE_LEFT" focusTraversable="false" mnemonicParsing="false" onAction="#chooseOption5" prefHeight="26.0" prefWidth="745.0" style="-fx-border-radius: 15; -fx-border-color: #1a0902; -fx-background-color: #965238; -fx-background-radius: 15;" text="Button" textFill="WHITE" wrapText="true" VBox.vgrow="ALWAYS">
                      <VBox.margin>
                         <Insets bottom="16.0" top="16.0" />
                      </VBox.margin>
@@ -113,7 +113,7 @@
                         <Font name="JetBrains Mono Regular Nerd Font Complete" size="13.0" />
                      </font>
                   </Button>
-                  <Button alignment="BASELINE_LEFT" focusTraversable="false" mnemonicParsing="false" prefHeight="26.0" prefWidth="745.0" style="-fx-border-radius: 15; -fx-border-color: #1a0902; -fx-background-color: #965238; -fx-background-radius: 15;" text="Button" textFill="WHITE" wrapText="true">
+                  <Button fx:id="dialogOption6" alignment="BASELINE_LEFT" focusTraversable="false" mnemonicParsing="false" onAction="#chooseOption6" prefHeight="26.0" prefWidth="745.0" style="-fx-border-radius: 15; -fx-border-color: #1a0902; -fx-background-color: #965238; -fx-background-radius: 15;" text="Button" textFill="WHITE" wrapText="true">
                      <VBox.margin>
                         <Insets bottom="16.0" top="16.0" />
                      </VBox.margin>
