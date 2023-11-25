@@ -1,11 +1,23 @@
 package officeOlympics.frontend.Controllers;
 
+import java.io.IOException;
+
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.shape.Rectangle;
+import javafx.stage.Stage;
 
 public class susViewController  {
+
+    private Stage stage;
+    private Scene scene;
+    private Parent pane;
+    private ActionEvent actionEvent;
+    
 
     @FXML
     private Rectangle suspect1Button;
@@ -38,7 +50,9 @@ public class susViewController  {
         al.setTitle("Accuse");
     }
 
-    
+    public void goToChangingRoom(ActionEvent actionEvent) throws IOException {
+        System.out.println("Changing Room");
+    }
 
 
 
