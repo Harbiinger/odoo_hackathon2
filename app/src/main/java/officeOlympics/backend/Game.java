@@ -50,6 +50,18 @@ public class Game {
                         int choiceId = choiceNode.get("id").asInt();
                         int interactionDir = choiceNode.get("interactionDir").asInt();
                         boolean isLocked = choiceNode.get("isLocked").asBoolean();
+                        ArrayNode eventNode = (ArrayNode) choiceNode.get("event");
+                        ArrayList<ModifyChoice> modifyChoices = new ArrayList<>();
+                        if (eventNode != null) {
+                            for (JsonNode event : eventNode) {
+                                boolean unlock = event.get("unlock").asBoolean();
+                                String name = event.get("name").asText();
+                                int interactionIdEvent = event.get("interactionId").asInt();
+                                int choiceIdEvent = event.get("choiceId").asInt();
+                                modifyChoices.add(new ModifyChoice(unlock, name, interactionIdEvent, choiceIdEvent));
+                            }
+                        }
+
                         String value = choiceNode.get("value").asText();
 
                         choices.add(new Choice(choiceId, interactionDir, isLocked, value, null));

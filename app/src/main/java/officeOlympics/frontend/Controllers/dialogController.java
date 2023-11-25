@@ -21,6 +21,7 @@ import javafx.stage.Stage;
 import officeOlympics.App;
 import officeOlympics.backend.Choice;
 import officeOlympics.backend.Interaction;
+import officeOlympics.backend.ModifyChoice;
 import officeOlympics.backend.Person;
 
 public class dialogController implements Initializable {
@@ -144,7 +145,13 @@ public class dialogController implements Initializable {
     public void changeInteraction(int choiceIndex, ActionEvent actionEvent) throws IOException {
         Person currentPerson = App.currentPerson;
         Interaction interaction = currentPerson.getCurrentInteraction();
-        int nextInteractionId = interaction.getChoices().get(choiceIndex).getInteractionDir();
+        Choice currentChoice = interaction.getChoices().get(choiceIndex);
+        if (currentChoice.getModifyChoices() != null) {
+            for (ModifyChoice modifyChoice : currentChoice.getModifyChoices()) {
+                App.game.modifyChoice(currentPerson, modifyChoice.getChoiceId(), modifyChoice.getInteractionId(), modifyChoice.isUnlock());
+            }
+        }
+        int nextInteractionId = currentChoice.getInteractionDir();
         if (nextInteractionId == -1) {
             back(actionEvent);
         }

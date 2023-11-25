@@ -7,6 +7,8 @@ public class Choice {
     private final int interactionDir;
     private boolean isLock;
     private final String value;
+
+
     private ArrayList<ModifyChoice> modifyChoices;
 
     public Choice(int id, int interactionDir, boolean isLock, String value, ArrayList<ModifyChoice> modifyChoices) {
@@ -35,6 +37,10 @@ public class Choice {
 
     public String getValue() {
         return value;
+    }
+
+    public ArrayList<ModifyChoice> getModifyChoices() {
+        return modifyChoices;
     }
 
     public String toString() {
