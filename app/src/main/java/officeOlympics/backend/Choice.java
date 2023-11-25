@@ -4,9 +4,9 @@ import java.util.ArrayList;
 
 public class Choice {
 
-    private int id;
+    private final int id;
     private boolean isLock;
-    private String value;
+    private final String value;
     private ArrayList<ModifyChoice> modifyChoices;
 
     public Choice(int id, boolean isLock, String value, ArrayList<ModifyChoice> modifyChoices) {
