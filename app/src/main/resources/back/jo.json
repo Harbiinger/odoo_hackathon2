@@ -251,7 +251,7 @@
               "id": 1,
               "interactionDir": -1,
               "value": "Thank you. [leave]",
-              "isLocked": "false"
+              "isLocked": false
             }
           ]
         },
