@@ -20,7 +20,7 @@
          <children>
             <ImageView fitHeight="720.0" fitWidth="640.0" pickOnBounds="true">
                <image>
-                  <Image url="@greekBackground.png" />
+                  <Image url="@antiqueBackground.png" />
                </image>
             </ImageView>
             <ImageView fitHeight="720.0" fitWidth="640.0" pickOnBounds="true">

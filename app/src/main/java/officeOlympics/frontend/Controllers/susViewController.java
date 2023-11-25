@@ -76,6 +76,7 @@ public class susViewController  {
     @FXML
     private Label suspect4Name;
 
+
     public void initialize() {
         // bg
         susBackground.setImage(new Image("/front/"+ App.mode+"Background.png"));
@@ -158,7 +159,7 @@ public class susViewController  {
         App.accuseMode = !App.accuseMode;
     }
 
-    public void goToEraSelection(ActionEvent actionEvent) throws IOException {
+    public void backToEraSelection(ActionEvent actionEvent) throws IOException {
         URL url = App.class.getResource("/front/eraSelection.fxml");
         pane = FXMLLoader.load(url);
         stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
