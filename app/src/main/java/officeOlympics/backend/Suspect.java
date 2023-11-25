@@ -6,8 +6,8 @@ public class Suspect extends Person{
 
     private boolean isGuilty;
 
-    public Suspect(String lastName, String firstName, String profession,String nationality, ArrayList<Interaction> interactions, boolean isGuilty) {
-        super(lastName, firstName, profession,nationality, interactions);
+    public Suspect(String lastName, String firstName, String profession, ArrayList<Interaction> interactions, boolean isGuilty) {
+        super(lastName, firstName, profession, interactions);
         this.isGuilty = isGuilty;
     }
 }
