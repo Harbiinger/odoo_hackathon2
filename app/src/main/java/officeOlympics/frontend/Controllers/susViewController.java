@@ -13,6 +13,8 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.shape.Rectangle;
 import javafx.stage.Stage;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import officeOlympics.App;
 
 public class susViewController  {
@@ -40,6 +42,21 @@ public class susViewController  {
     
     @FXML
     private Button inventoryButton;
+
+    @FXML
+    private ImageView imageHolder1;
+
+    @FXML
+    private ImageView imageHolder2;
+
+    @FXML
+    private ImageView imageHolder3;
+
+    @FXML
+    private ImageView imageHolder4;
+
+    public void initialize() {
+    }
 
     public void talktTo() {
         System.out.println("Talk to");
