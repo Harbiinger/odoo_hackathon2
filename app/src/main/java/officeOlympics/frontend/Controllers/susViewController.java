@@ -56,6 +56,9 @@ public class susViewController  {
     @FXML
     private ImageView imageHolder4;
 
+    @FXML 
+    private ImageView susBackground; 
+
     @FXML
     private Label suspect1Name;
 
@@ -69,6 +72,7 @@ public class susViewController  {
     private Label suspect4Name;
 
     public void initialize() {
+        susBackground.setImage(new Image("/front/"+ App.mode+"Background.png"));
         imageHolder1.setImage(new Image("/front/"+App.peopleList.get(0).getFirstName()+".png"));
         suspect1Name.setText(App.peopleList.get(0).getFirstName() + " " + App.peopleList.get(0).getLastName());
         imageHolder2.setImage(new Image("/front/"+App.peopleList.get(1).getFirstName()+".png"));
