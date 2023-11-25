@@ -134,7 +134,206 @@
       "profession": "Cyclist",
       "nationality": "Dutch",
       "interactions" : [
-
+        {
+          "id": 0,
+          "text": "Hallo, Are you here for an autograph from today's winner? Hahaha just jokin' what d' you want ?",
+          "choices": [
+            {
+              "id": 0,
+              "interactionDir": 1,
+              "value": "Congratulations for your first place you must be very proud",
+              "isLocked": false
+            },
+            {
+              "id": 1,
+              "interactionDir": 2,
+              "value": "Have you heard rumors about cheaters during these Olympics Games ?",
+              "isLocked": false
+            },
+            {
+              "id": 2,
+              "interactionDir": -1,
+              "value": "Bye. [leave]",
+              "isLocked": false
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "Yeees indeed I am. You would be too if you were me. Imagine how it feels to finally win after years of trainin'. In fact I started trainin' when I was very young. I still remember that time when I trained during 12 hours straight.",
+          "choices": [
+            {
+              "id": 0,
+              "interactionDir": 3,
+              "value": "Who?",
+              "isLocked": false
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "Cheaters? Olympics Games are a noble event, I don't think any participant would dare to cheat. This idea seems ridiculous to me.",
+          "choices": [
+            {
+              "id": 0,
+              "interactionDir": 0,
+              "value": "Ok that's what i thought.",
+              "isLocked": false
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "What? Me.",
+          "choices": [
+            {
+              "id": 0,
+              "interactionDir": 4,
+              "value": "Who asked ?",
+              "isLocked": false
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "......",
+          "choices": [
+            {
+              "id": 0,
+              "interactionDir": -1,
+              "value": "[leave]",
+              "isLocked": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lastName": "Massimo",
+      "firstName": "Marcello",
+      "profession": "Cyclist",
+      "nationality": "Italian",
+      "interactions": [
+        {
+          "id": 0,
+          "text": "Ciao what do you want from me ?",
+          "choices": [
+            {
+              "id": 0,
+              "interactionDir": 1,
+              "value": "Have you ever participated in the Olympics Games?",
+              "isLocked": false
+            },
+            {
+              "id": 1,
+              "interactionDir": 5,
+              "value": "Do you think someone could have cheat during the competition ?"
+            },
+            {
+              "id": 2,
+              "interactionDir": -1,
+              "value": "Nothing, thank you. [leave]",
+              "isLocked": false
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "No it was my first competing in an international competition. An unforgettable experience if you want my feedback.",
+          "choices": [
+            {
+              "id": 0,
+              "interactionDir": 2,
+              "value": "You did very well for a first experience. Third place it's not easy for everyone.",
+              "isLocked": false
+            },
+            {
+              "id": 1,
+              "interactionDir": -1,
+              "value": "Thank you. [leave]",
+              "isLocked": "false"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "Yes of course you're right. It was far from free, I had to train a lot to achieve this result. But I'm convinced that hard work can lead you to incredible performances.",
+          "choices": [
+            {
+              "id": 0,
+              "interactionDir": 3,
+              "value": "Cheating can too",
+              "isLocked": false
+            },
+            {
+              "id": 1,
+              "interactionDir": 4,
+              "value": "How long have you trained ?",
+              "isLocked": false
+            },
+            {
+              "id": 2,
+              "interactionDir": -1,
+              "value": "Thank you for your time [leave]",
+              "isLocked": false
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "Yes but I hate cheating I would never consider it.",
+          "choices": [
+            {
+              "id": 0,
+              "interactionDur": -1,
+              "value": "Interesting, thank you. [leave]",
+              "isLocked": false
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "Since I started from nothing it took me 4 years to be ready",
+          "choices": [
+            {
+              "id": 0,
+              "interactionDur": -1,
+              "value": "Interesting, thank you. [leave]",
+              "isLocked": false
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "Mmmh to be honest yes, it is definitely a possibility. The controls were were not that strict. Someone could have smuggle cheating materials into the lock-rooms",
+          "choices": [
+            {
+              "id": 0,
+              "interactionDur": -1,
+              "value": "That would be all, thank you [leave]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lastName": "Ackermann",
+      "firstName": "Karl",
+      "profession": "Cyclist",
+      "nationality": "Italian",
+      "interactions": [
+        {
+          "id": 0,
+          "text": "Hello there",
+          "choices": [
+            {
+              "id": 0,
+              "interactionDir": -1,
+              "value": "General kenobi [leave]",
+              "isLocked": false
+            }
+          ]
+        }
       ]
     }
   ]
