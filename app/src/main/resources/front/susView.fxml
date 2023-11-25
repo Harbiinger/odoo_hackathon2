@@ -47,7 +47,7 @@
                               <Insets top="64.0" />
                            </padding>
                         </VBox>
-                        <Rectangle fx:id="suspect1Button" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="301.0" onMouseClicked="#talktTo" stroke="TRANSPARENT" strokeType="INSIDE" width="200.0">
+                        <Rectangle fx:id="suspect1Button" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="301.0" onMouseClicked="#talkTo1" stroke="TRANSPARENT" strokeType="INSIDE" width="200.0">
                            <StackPane.margin>
                               <Insets top="64.0" />
                            </StackPane.margin>
@@ -84,7 +84,7 @@
                               <Insets top="64.0" />
                            </padding>
                         </VBox>
-                        <Rectangle fx:id="suspect2Button" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="301.0" onMouseClicked="#talktTo" stroke="TRANSPARENT" strokeType="INSIDE" width="200.0">
+                        <Rectangle fx:id="suspect2Button" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="301.0" onMouseClicked="#talkTo2" stroke="TRANSPARENT" strokeType="INSIDE" width="200.0">
                            <StackPane.margin>
                               <Insets top="64.0" />
                            </StackPane.margin>
@@ -116,7 +116,7 @@
                               <Insets top="64.0" />
                            </padding>
                         </VBox>
-                        <Rectangle fx:id="suspect3Button" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="301.0" onMouseClicked="#talktTo" stroke="TRANSPARENT" strokeType="INSIDE" width="200.0">
+                        <Rectangle fx:id="suspect3Button" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="301.0" onMouseClicked="#talkTo3" stroke="TRANSPARENT" strokeType="INSIDE" width="200.0">
                            <StackPane.margin>
                               <Insets top="64.0" />
                            </StackPane.margin>
@@ -148,7 +148,7 @@
                               <Insets top="64.0" />
                            </padding>
                         </VBox>
-                        <Rectangle fx:id="suspect4Button" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="301.0" onMouseClicked="#talktTo" stroke="TRANSPARENT" strokeType="INSIDE" width="200.0">
+                        <Rectangle fx:id="suspect4Button" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="301.0" onMouseClicked="#talkTo4" stroke="TRANSPARENT" strokeType="INSIDE" width="200.0">
                            <StackPane.margin>
                               <Insets top="64.0" />
                            </StackPane.margin>

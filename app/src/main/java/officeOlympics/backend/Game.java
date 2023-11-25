@@ -22,7 +22,7 @@ public class Game {
     public Game(String filePath) {
         people = new HashMap<>();
         try {
-            String path = System.getProperty("user.dir") + "/app/src/main/resources/back/jo.json";
+            String path = System.getProperty("user.dir") + "/src/main/resources/back/"+filePath;
             String json = new String(Files.readAllBytes(Paths.get(path)));
 
             ObjectMapper objectMapper = new ObjectMapper();
