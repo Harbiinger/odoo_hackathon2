@@ -24,8 +24,7 @@ public class Person {
         return lastName;
     }
 
-    public Interaction makeAChoice(int choiceNumber){
-        // When a choice is made it return the interaction related to this choice
-        return interactions.get(choiceNumber);
+    public Interaction loadInteraction(int interactionIndex){
+        return interactions.get(interactionIndex);
     }
 }

@@ -25,4 +25,8 @@ public class Interaction {
     public String getText() {
         return text;
     }
+
+    public int makeAChoice(Choice choice){
+        return choice.getInteractionDir();
+    }
 }
