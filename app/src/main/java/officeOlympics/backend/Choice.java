@@ -3,7 +3,6 @@ package officeOlympics.backend;
 import java.util.ArrayList;
 
 public class Choice {
-
     private final int id;
     private final int interactionDir;
     private boolean isLock;

@@ -1,0 +1,132 @@
+{
+  "people": [
+    {
+      "lastName": "Trovitchi",
+      "firstName": "Kipet",
+      "profession": "Cyclist",
+      "nationality": "Russian",
+      "interactions" : [
+        {
+          "id": 0,
+          "text" : "Privet ! Me no cheating, me training whole life to serve motherland.",
+          "choices": [
+            {
+              "id": 0,
+              "interactionDir" : 1,
+              "value" : "You seem to be defensive. Why are you stressed ?",
+              "isLocked" : false
+            },
+            {
+              "id": 1,
+              "interactionDir" : 2,
+              "value" : "Why did you participate in these olympic games ?",
+              "isLocked" : false
+            },
+            {
+              "id": 2,
+              "interactionDir" : 3,
+              "value" : "What is your final ranking ?",
+              "isLocked" : false
+            },
+            {
+              "id": 3,
+              "interactionDir" : 4,
+              "value" : "Do you have information about potential cheaters during the event ?",
+              "isLocked" : false
+            },
+            {
+              "id" : 4,
+              "interactionDir" : -1,
+              "value" : "Thanks for your time [leave]",
+              "isLocked" : false
+            }
+          ]
+        },
+        {
+          "id" : 1,
+          "text" : "I'm not stressed ! You have no right to accuse me ! I passed all the anti-doping tests. Russia have always been honest. Not like other countries...",
+          "choices" : [
+            {
+              "id" : 5,
+              "interactionDir" : 5,
+              "value" : "What do you mean ? You think other countries are dishonest ?",
+              "isLocked" : false
+            }
+          ]
+        },
+        {
+          "id" : 2,
+          "text" : "Me had no choice. I have always been good at cycling. I was convinced to represent my country.",
+          "choices" : [
+            {
+              "id" : 6,
+              "interactionDir" : 6,
+              "value" : "What would happen to you if you came home without a medal ?",
+              "isLocked" : false
+            }
+          ]
+        },
+        {
+          "id" : 3,
+          "text" : "I finished second",
+          "choices" : [
+            {
+              "id" : 7,
+              "interactionDir" : 0,
+              "value" : "Back to previous choices",
+              "isLocked" : false
+            }
+          ]
+        },
+        {
+          "id" : 4,
+          "text" : "Yes, I'm convinced The Netherlands cheated. How could they beat me otherwise ?",
+          "choices" : [
+            {
+              "id" : 8,
+              "interactionDir" : 7,
+              "value" : "Do you have any evidence for these accusations ?",
+              "isLocked" : false
+            }
+          ]
+        },
+        {
+          "id" : 5,
+          "text" : "Of course they are ! They're jealous they can't compete with us ! They have to cheat to beat us it's obvious. There is no way The Netherlands beat us without cheating. I'm 100% sure they took drugs or something.",
+          "choices" : [
+            {
+              "id" : 9,
+              "interactionDir" : 0,
+              "value" : "Back to previous choices",
+              "isLocked" : false
+            }
+          ]
+        },
+        {
+          "id" : 6,
+          "text" : "I... I'd rather not think about that.",
+          "choices" : [
+            {
+              "id" : 10,
+              "interactionDir" : 0,
+              "value" : "Back to previous choices",
+              "isLocked" : false
+            }
+          ]
+        },
+        {
+          "id" : 7,
+          "text" : "What ?! You think I'm a liar ?? You want me to punch you in the face ?",
+          "choices": [
+            {
+              "id" : 11,
+                "interactionDir" : 0,
+                "value" : "Back to previous choices",
+                "isLocked" : false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

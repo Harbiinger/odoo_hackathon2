@@ -35,6 +35,7 @@ java {
     }
 }
 
+
 javafx {
     version = "17"
     modules("javafx.controls", "javafx.fxml", "javafx.graphics", "javafx.media", "javafx.web", "javafx.base")
