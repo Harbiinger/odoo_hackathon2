@@ -2,6 +2,7 @@ package officeOlympics;
 
 import java.io.IOException;
 import java.net.URL;
+import java.util.ArrayList;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -9,9 +10,8 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
-import java.util.ArrayList;
-
-import officeOlympics.backend.*;
+import officeOlympics.backend.Game;
+import officeOlympics.backend.Person;
 
 public class App extends Application {
 
@@ -21,6 +21,7 @@ public class App extends Application {
     public static Game game;
     public static Stage stage;
     public static String mode = "modern"; // ou antique
+    public static boolean accuseMode = false;
 
     public static void main(String[] args) {
         game = new Game("jo.json");
@@ -35,7 +36,7 @@ public class App extends Application {
         stage = primaryStage;
 
         try {
-            URL url = App.class.getResource("/front/susView.fxml");
+            URL url = App.class.getResource("/front/eraSelection.fxml");
             System.out.println(url);
             FXMLLoader fxmlLoader = new FXMLLoader(url);
             Parent parent = fxmlLoader.load();

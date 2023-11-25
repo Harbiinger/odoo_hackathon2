@@ -176,12 +176,17 @@
          <top>
             <Pane prefHeight="90.0" prefWidth="1280.0" BorderPane.alignment="TOP_CENTER">
                <children>
-                  <Button fx:id="accuseButton" layoutX="1117.0" layoutY="27.0" mnemonicParsing="false" onAction="#accuse" prefWidth="97.0" style="-fx-background-color: #965238; -fx-border-color: #1a0902; -fx-border-radius: 16; -fx-border-width: 4; -fx-background-radius: 32;" text="Accuse" textFill="WHITE">
+                  <Button fx:id="accuseButton" layoutX="1117.0" layoutY="27.0" mnemonicParsing="false" onAction="#switchAccuseMode" prefWidth="97.0" style="-fx-background-color: #965238; -fx-border-color: #1a0902; -fx-border-radius: 16; -fx-border-width: 4; -fx-background-radius: 32;" text="Accuse" textFill="WHITE">
                      <font>
                         <Font name="Arial Bold" size="18.0" />
                      </font>
                   </Button>
-                  <Button fx:id="inventoryButton" layoutX="27.0" layoutY="24.0" mnemonicParsing="false" onAction="#displayInventory" style="-fx-background-color: #965238; -fx-border-color: #1a0902; -fx-border-radius: 16; -fx-border-width: 4; -fx-background-radius: 64;" text="i" textFill="WHITE">
+                  <Button fx:id="backButton" layoutX="21.0" layoutY="25.0" mnemonicParsing="false" onAction="#backToEraSelection" style="-fx-background-color: #965238; -fx-border-color: #1a0902; -fx-border-radius: 16; -fx-border-width: 4; -fx-background-radius: 64;" text="Back" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="inventoryButton1" layoutX="112.0" layoutY="25.0" mnemonicParsing="false" onAction="#displayInventory" style="-fx-background-color: #965238; -fx-border-color: #1a0902; -fx-border-radius: 16; -fx-border-width: 4; -fx-background-radius: 64;" text="i" textFill="WHITE">
                      <font>
                         <Font name="Arial Bold" size="18.0" />
                      </font>

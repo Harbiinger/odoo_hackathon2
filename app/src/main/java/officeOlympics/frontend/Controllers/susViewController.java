@@ -9,19 +9,19 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import javafx.scene.shape.Rectangle;
-import javafx.stage.Stage;
+import javafx.scene.effect.BoxBlur;
+import javafx.scene.effect.DropShadow;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import officeOlympics.App;
-import javafx.scene.effect.BoxBlur;
 import javafx.scene.paint.Color;
+import javafx.scene.shape.Rectangle;
 import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
-import javafx.scene.effect.DropShadow;
+import javafx.stage.Stage;
+import officeOlympics.App;
+
 
 public class susViewController  {
 
@@ -86,6 +86,7 @@ public class susViewController  {
         haloEffect.setColor(Color.WHITE);
         haloEffect.setRadius(20); // Set the radius according to your preference
         // suspects pictures
+        System.out.println("/front/"+App.peopleList.get(0).getFirstName()+".png");
         imageHolder1.setImage(new Image("/front/"+App.peopleList.get(0).getFirstName()+".png"));
         imageHolder1.setEffect(haloEffect);
         imageHolder2.setImage(new Image("/front/"+App.peopleList.get(1).getFirstName()+".png"));
@@ -153,9 +154,17 @@ public class susViewController  {
         System.out.println("Display Inventory");
     }
 
-    public void accuse() {
-        Alert al = new Alert(Alert.AlertType.INFORMATION);
-        al.setTitle("Accuse");
+    public void switchAccuseMode() {
+        App.accuseMode = !App.accuseMode;
+    }
+
+    public void goToEraSelection(ActionEvent actionEvent) throws IOException {
+        URL url = App.class.getResource("/front/eraSelection.fxml");
+        pane = FXMLLoader.load(url);
+        stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
+        scene = new Scene(pane);
+        stage.setScene(scene);
+        stage.show();
     }
 
     public void goToChangingRoom(ActionEvent actionEvent) throws IOException {

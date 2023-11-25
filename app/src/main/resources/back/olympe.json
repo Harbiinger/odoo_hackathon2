@@ -1,0 +1,353 @@
+{
+    "people": [
+      {
+        "lastName": "Stot",
+        "firstName": "Harry",
+        "profession": "Cyclist",
+        "nationality": "Greek",
+        "interactions" : [
+          {
+            "id": 0,
+            "text" : "Privet ! Me no cheating, me training whole life to serve motherland.",
+            "choices": [
+              {
+                "id": 0,
+                "interactionDir" : 1,
+                "value" : "You seem to be defensive. Why are you stressed ?",
+                "isLocked" : false
+              },
+              {
+                "id": 1,
+                "interactionDir" : 2,
+                "value" : "Why did you participate in these olympic games ?",
+                "isLocked" : false
+              },
+              {
+                "id": 2,
+                "interactionDir" : 3,
+                "value" : "What is your final ranking ?",
+                "isLocked" : false
+              },
+              {
+                "id": 3,
+                "interactionDir" : 4,
+                "value" : "Do you have information about potential cheaters during the event ?",
+                "event": {
+                  "name": "Ackermann",
+                  "interactionId": 0,
+                  "choiceId": 1
+                },
+                "isLocked" : false
+              },
+              {
+                "id" : 4,
+                "interactionDir" : -1,
+                "value" : "Thanks for your time [leave]",
+                "isLocked" : false
+              }
+            ]
+          },
+          {
+            "id" : 1,
+            "text" : "I'm not stressed ! You have no right to accuse me ! I passed all the anti-doping tests. Russia have always been honest. Not like other countries...",
+            "choices" : [
+              {
+                "id" : 5,
+                "interactionDir" : 5,
+                "value" : "What do you mean ? You think other countries are dishonest ?",
+                "isLocked" : false
+              }
+            ]
+          },
+          {
+            "id" : 2,
+            "text" : "Me had no choice. I have always been good at cycling. I was convinced to represent my country.",
+            "choices" : [
+              {
+                "id" : 6,
+                "interactionDir" : 6,
+                "value" : "What would happen to you if you came home without a medal ?",
+                "isLocked" : false
+              }
+            ]
+          },
+          {
+            "id" : 3,
+            "text" : "I finished second",
+            "choices" : [
+              {
+                "id" : 7,
+                "interactionDir" : 0,
+                "value" : "Back to previous choices",
+                "isLocked" : false
+              }
+            ]
+          },
+          {
+            "id" : 4,
+            "text" : "Yes, I'm convinced The Netherlands cheated. How could they beat me otherwise ?",
+            "choices" : [
+              {
+                "id" : 8,
+                "interactionDir" : 7,
+                "value" : "Do you have any evidence for these accusations ?",
+                "isLocked" : false
+              }
+            ]
+          },
+          {
+            "id" : 5,
+            "text" : "Of course they are ! They're jealous they can't compete with us ! They have to cheat to beat us it's obvious. There is no way The Netherlands beat us without cheating. I'm 100% sure they took drugs or something.",
+            "choices" : [
+              {
+                "id" : 9,
+                "interactionDir" : 0,
+                "value" : "Back to previous choices",
+                "isLocked" : false
+              }
+            ]
+          },
+          {
+            "id" : 6,
+            "text" : "I... I'd rather not think about that.",
+            "choices" : [
+              {
+                "id" : 10,
+                "interactionDir" : 0,
+                "value" : "Back to previous choices",
+                "isLocked" : false
+              }
+            ]
+          },
+          {
+            "id" : 7,
+            "text" : "What ?! You think I'm a liar ?? You want me to punch you in the face ?",
+            "choices": [
+              {
+                "id" : 11,
+                  "interactionDir" : 0,
+                  "value" : "Back to previous choices",
+                  "isLocked" : false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "lastName": "Cless",
+        "firstName": "Perry",
+        "profession": "Cyclist",
+        "nationality": "Macedonian",
+        "interactions" : [
+          {
+            "id": 0,
+            "text": "Hallo, Are you here for an autograph from today's winner? Hahaha just jokin' what d' you want ?",
+            "choices": [
+              {
+                "id": 0,
+                "interactionDir": 1,
+                "value": "Congratulations for your first place you must be very proud",
+                "isLocked": false
+              },
+              {
+                "id": 1,
+                "interactionDir": 2,
+                "value": "Have you heard rumors about cheaters during these Olympics Games ?",
+                "isLocked": false
+              },
+              {
+                "id": 2,
+                "interactionDir": -1,
+                "value": "Bye. [leave]",
+                "isLocked": false
+              }
+            ]
+          },
+          {
+            "id": 1,
+            "text": "Yeees indeed I am. You would be too if you were me. Imagine how it feels to finally win after years of trainin'. In fact I started trainin' when I was very young. I still remember that time when I trained during 12 hours straight.",
+            "choices": [
+              {
+                "id": 0,
+                "interactionDir": 3,
+                "value": "Who?",
+                "isLocked": false
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "text": "Cheaters? Olympics Games are a noble event, I don't think any participant would dare to cheat. This idea seems ridiculous to me.",
+            "choices": [
+              {
+                "id": 0,
+                "interactionDir": 0,
+                "value": "Ok that's what i thought.",
+                "isLocked": false
+              }
+            ]
+          },
+          {
+            "id": 3,
+            "text": "What? Me.",
+            "choices": [
+              {
+                "id": 0,
+                "interactionDir": 4,
+                "value": "Who asked ?",
+                "isLocked": false
+              }
+            ]
+          },
+          {
+            "id": 4,
+            "text": "......",
+            "choices": [
+              {
+                "id": 0,
+                "interactionDir": -1,
+                "value": "[leave]",
+                "isLocked": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "lastName": "Sius",
+        "firstName": "Confus",
+        "profession": "Cyclist",
+        "nationality": "Chinese",
+        "interactions": [
+          {
+            "id": 0,
+            "text": "Ciao what do you want from me ?",
+            "choices": [
+              {
+                "id": 0,
+                "interactionDir": 1,
+                "value": "Have you ever participated in the Olympics Games?",
+                "isLocked": false
+              },
+              {
+                "id": 1,
+                "interactionDir": 5,
+                "value": "Do you think someone could have cheat during the competition ?",
+                "isLocked": false
+              },
+              {
+                "id": 2,
+                "interactionDir": -1,
+                "value": "Nothing, thank you. [leave]",
+                "isLocked": false
+              }
+            ]
+          },
+          {
+            "id": 1,
+            "text": "No it was my first competing in an international competition. An unforgettable experience if you want my feedback.",
+            "choices": [
+              {
+                "id": 0,
+                "interactionDir": 2,
+                "value": "You did very well for a first experience. Third place it's not easy for everyone.",
+                "isLocked": false
+              },
+              {
+                "id": 1,
+                "interactionDir": -1,
+                "value": "Thank you. [leave]",
+                "isLocked": false
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "text": "Yes of course you're right. It was far from free, I had to train a lot to achieve this result. But I'm convinced that hard work can lead you to incredible performances.",
+            "choices": [
+              {
+                "id": 0,
+                "interactionDir": 3,
+                "value": "Cheating can too",
+                "isLocked": false
+              },
+              {
+                "id": 1,
+                "interactionDir": 4,
+                "value": "How long have you trained ?",
+                "isLocked": false
+              },
+              {
+                "id": 2,
+                "interactionDir": -1,
+                "value": "Thank you for your time [leave]",
+                "isLocked": false
+              }
+            ]
+          },
+          {
+            "id": 3,
+            "text": "Yes but I hate cheating I would never consider it.",
+            "choices": [
+              {
+                "id": 0,
+                "interactionDir": -1,
+                "value": "Interesting, thank you. [leave]",
+                "isLocked": false
+              }
+            ]
+          },
+          {
+            "id": 4,
+            "text": "Since I started from nothing it took me 4 years to be ready",
+            "choices": [
+              {
+                "id": 0,
+                "interactionDir": -1,
+                "value": "Interesting, thank you. [leave]",
+                "isLocked": false
+              }
+            ]
+          },
+          {
+            "id": 5,
+            "text": "Mmmh to be honest yes, it is definitely a possibility. The controls were were not that strict. Someone could have smuggle cheating materials into the lock-rooms",
+            "choices": [
+              {
+                "id": 0,
+                "interactionDir": -1,
+                "value": "That would be all, thank you [leave]",
+                "isLocked": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "lastName": "Meh",
+        "firstName": "Mao",
+        "profession": "Cyclist",
+        "nationality": "Saudi Arabian",
+        "interactions": [
+          {
+            "id": 0,
+            "text": "Hello there",
+            "choices": [
+              {
+                "id": 0,
+                "interactionDir": -1,
+                "value": "General kenobi [leave]",
+                "isLocked": false
+              },
+              {
+                "id": 1,
+                "interactionDir": -1,
+                "value": "oui",
+                "isLocked": true
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }

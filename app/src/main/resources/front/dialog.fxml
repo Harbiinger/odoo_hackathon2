@@ -68,7 +68,7 @@
          <center>
             <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
                <children>
-                  <TextArea fx:id="dialogBox" editable="false" prefHeight="200.0" prefWidth="200.0" promptText="DIALOG">
+                  <TextArea fx:id="dialogBox" editable="false" prefHeight="200.0" prefWidth="200.0" promptText="DIALOG" wrapText="true">
                      <VBox.margin>
                         <Insets bottom="16.0" top="16.0" />
                      </VBox.margin>
