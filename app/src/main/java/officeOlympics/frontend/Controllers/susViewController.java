@@ -18,6 +18,10 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import officeOlympics.App;
 import javafx.scene.effect.BoxBlur;
+import javafx.scene.paint.Color;
+import javafx.scene.text.Font;
+import javafx.scene.text.FontWeight;
+import javafx.scene.effect.DropShadow;
 
 public class susViewController  {
 
@@ -73,17 +77,40 @@ public class susViewController  {
     private Label suspect4Name;
 
     public void initialize() {
+        // bg
         susBackground.setImage(new Image("/front/"+ App.mode+"Background.png"));
-        BoxBlur blur = new BoxBlur(5, 5, 3);
-        susBackground.setEffect(blur);
+        BoxBlur blur = new BoxBlur(7, 7, 3);
+        susBackground.setEffect(blur); 
+        // Create a DropShadow effect with a white color
+        DropShadow haloEffect = new DropShadow();
+        haloEffect.setColor(Color.WHITE);
+        haloEffect.setRadius(20); // Set the radius according to your preference
+        // suspects pictures
         imageHolder1.setImage(new Image("/front/"+App.peopleList.get(0).getFirstName()+".png"));
-        suspect1Name.setText(App.peopleList.get(0).getFirstName() + " " + App.peopleList.get(0).getLastName());
+        imageHolder1.setEffect(haloEffect);
         imageHolder2.setImage(new Image("/front/"+App.peopleList.get(1).getFirstName()+".png"));
-        suspect2Name.setText(App.peopleList.get(1).getFirstName() + " " + App.peopleList.get(1).getLastName());
+        imageHolder2.setEffect(haloEffect);
         imageHolder3.setImage(new Image("/front/"+App.peopleList.get(2).getFirstName()+".png"));
-        suspect3Name.setText(App.peopleList.get(2).getFirstName() + " " + App.peopleList.get(2).getLastName());
+        imageHolder3.setEffect(haloEffect);
         imageHolder4.setImage(new Image("/front/"+App.peopleList.get(3).getFirstName()+".png"));
+        imageHolder4.setEffect(haloEffect);
+        // suspects images
+        suspect1Name.setText(App.peopleList.get(0).getFirstName() + " " + App.peopleList.get(0).getLastName());
+        suspect1Name.setTextFill(Color.WHITE);
+        suspect1Name.setFont(Font.font("Arial", FontWeight.BOLD, 18));
+
+        suspect2Name.setText(App.peopleList.get(1).getFirstName() + " " + App.peopleList.get(1).getLastName());
+        suspect2Name.setTextFill(Color.WHITE);
+        suspect2Name.setFont(Font.font("Arial", FontWeight.BOLD, 18));
+
+        suspect3Name.setText(App.peopleList.get(2).getFirstName() + " " + App.peopleList.get(2).getLastName());
+        suspect3Name.setTextFill(Color.WHITE);
+        suspect3Name.setFont(Font.font("Arial", FontWeight.BOLD, 18));
+
         suspect4Name.setText(App.peopleList.get(3).getFirstName() + " " + App.peopleList.get(3).getLastName());
+        suspect4Name.setTextFill(Color.WHITE);
+        suspect4Name.setFont(Font.font("Arial", FontWeight.BOLD, 18));
+
     }
 
     public void talkTo1() {
