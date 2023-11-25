@@ -21,7 +21,19 @@ public class Choice {
         return id;
     }
 
+    public boolean isLock() {
+        return isLock;
+    }
+
     public int getInteractionDir() {
         return interactionDir;
+    }
+
+    public String toString() {
+        String res = "";
+        res += id + " | ";
+        res += "val = " + value + " | ";
+        res += "direction= " + interactionDir;
+        return res;
     }
 }

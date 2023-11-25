@@ -1,19 +1,26 @@
 package officeOlympics.backend;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import java.util.ArrayList;
 
 public class Person {
 
+    @JsonProperty("lastName")
     private String lastName;
+    @JsonProperty("firstName")
     private String firstName;
+    @JsonProperty("profession")
     private String profession;
+    private int currentInteraction;
     private ArrayList<Interaction> interactions;
 
-    public Person(String lastName, String firstName, String profession, ArrayList<Interaction> interactions) {
+    public Person(String lastName, String firstName, String profession ,ArrayList<Interaction> interactions) {
         this.lastName = lastName;
         this.firstName = firstName;
         this.profession = profession;
         this.interactions = interactions;
+        currentInteraction = 0;
     }
 
     public ArrayList<Interaction> getInteractions() {
@@ -24,7 +31,32 @@ public class Person {
         return lastName;
     }
 
-    public Interaction loadInteraction(int interactionIndex){
-        return interactions.get(interactionIndex);
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public String getProfession() {
+        return profession;
+    }
+
+    /**
+     * Return the interaction we are currently in with the person
+     * @return The interaction object
+     */
+    public Interaction getCurrentInteraction() {
+        return this.interactions.get(currentInteraction);
+    }
+
+    /**
+     * Change the value of the current interaction. <br>
+     * The idea is to get the interaction and when you make a choice you get an index which is the index to give to this function.
+     * @param interactionIndex The index of the next interaction
+     */
+    public void changeInteraction(int interactionIndex) {
+        if (interactionIndex < 0) {
+            currentInteraction = 0;
+        } else {
+            currentInteraction = interactionIndex;
+        }
     }
 }

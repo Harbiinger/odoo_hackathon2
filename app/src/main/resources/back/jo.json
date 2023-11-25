@@ -127,6 +127,15 @@
           ]
         }
       ]
+    },
+    {
+      "lastName": "Seam",
+      "firstName": "Bjorn",
+      "profession": "Cyclist",
+      "nationality": "Dutch",
+      "interactions" : [
+
+      ]
     }
   ]
 }
