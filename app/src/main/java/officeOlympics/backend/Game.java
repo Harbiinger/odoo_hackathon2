@@ -81,4 +81,10 @@ public class Game {
     public ArrayList<Person> getPersons() {
         return new ArrayList<>(people.values());
     }
+
+    public void modifyChoice(Person p, int choiceId, int interactionDir, boolean setLock) {
+        Interaction interaction = p.getInteractions().get(interactionDir);
+        Choice choice = interaction.getChoices().get(choiceId);
+        choice.setLock(setLock);
+    }
 }

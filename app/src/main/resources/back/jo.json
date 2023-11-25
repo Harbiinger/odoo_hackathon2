@@ -32,6 +32,11 @@
               "id": 3,
               "interactionDir" : 4,
               "value" : "Do you have information about potential cheaters during the event ?",
+              "event": {
+                "name": "Ackermann",
+                "interactionId": 0,
+                "choiceId": 1
+              },
               "isLocked" : false
             },
             {
@@ -333,6 +338,12 @@
               "interactionDir": -1,
               "value": "General kenobi [leave]",
               "isLocked": false
+            },
+            {
+              "id": 1,
+              "interactionDir": -1,
+              "value": "oui",
+              "isLocked": true
             }
           ]
         }

@@ -59,4 +59,8 @@ public class Person {
             currentInteraction = interactionIndex;
         }
     }
+
+    public void reset() {
+        currentInteraction = 0;
+    }
 }

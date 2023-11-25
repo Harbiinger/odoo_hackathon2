@@ -21,6 +21,10 @@ public class Choice {
         return id;
     }
 
+    public void setLock(boolean lock) {
+        isLock = lock;
+    }
+
     public boolean isLock() {
         return isLock;
     }

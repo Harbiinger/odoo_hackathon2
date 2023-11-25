@@ -66,7 +66,49 @@ public class dialogController implements Initializable {
     private TextArea dialogBox;
 
 
+    // Button gestion
+    private int buttonNumber = 0;
+
+
+    public void clearButtons() {
+        buttonNumber = 0;
+        dialogOption1.setVisible(false);
+        dialogOption2.setVisible(false);
+        dialogOption3.setVisible(false);
+        dialogOption4.setVisible(false);
+        dialogOption5.setVisible(false);
+    }
+
+    public void addButton(Choice text) {
+        switch (buttonNumber++) {
+            case 0:
+                dialogOption1.setVisible(true);
+                dialogOption1.setText(text.getValue());
+                break;
+            case 1:
+                dialogOption2.setVisible(true);
+                dialogOption2.setText(text.getValue());
+                break;
+            case 2:
+                dialogOption3.setVisible(true);
+                dialogOption3.setText(text.getValue());
+                break;
+            case 3:
+                dialogOption4.setVisible(true);
+                dialogOption4.setText(text.getValue());
+                break;
+            case 4:
+                dialogOption5.setVisible(true);
+                dialogOption5.setText(text.getValue());
+                break;
+            default:
+                break;
+        }
+    }
+
+
     public void back(ActionEvent actionEvent) throws IOException {
+        App.currentPerson.reset();
         URL url = App.class.getResource("/front/susView.fxml");
         pane = FXMLLoader.load(url);
         stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
@@ -80,33 +122,40 @@ public class dialogController implements Initializable {
     }
 
     public void chooseOption1(ActionEvent actionEvent) throws IOException {
-        changeInteraction(0);
+        changeInteraction(0, actionEvent);
     }
 
     public void chooseOption2(ActionEvent actionEvent) throws IOException {
-        changeInteraction(1);
+        changeInteraction(1, actionEvent);
     }
 
     public void chooseOption3(ActionEvent actionEvent) throws IOException {
-        changeInteraction(2);
+        changeInteraction(2,actionEvent);
     }
 
     public void chooseOption4(ActionEvent actionEvent) throws IOException {
-        changeInteraction(3);
+        changeInteraction(3, actionEvent);
     }
 
     public void chooseOption5(ActionEvent actionEvent) throws IOException {
-        changeInteraction(4);
+        changeInteraction(4, actionEvent);
     }
 
-    public void changeInteraction(int choiceIndex) {
+    public void changeInteraction(int choiceIndex, ActionEvent actionEvent) throws IOException {
         Person currentPerson = App.currentPerson;
         Interaction interaction = currentPerson.getCurrentInteraction();
         int nextInteractionId = interaction.getChoices().get(choiceIndex).getInteractionDir();
+        if (nextInteractionId == -1) {
+            back(actionEvent);
+        }
         currentPerson.changeInteraction(nextInteractionId);
         dialogBox.setText(currentPerson.getCurrentInteraction().getText());
         ArrayList<Choice> choices = currentPerson.getCurrentInteraction().getChoices();
-        dialogOption1.setText(choices.get(choiceIndex).getValue());
+        clearButtons();
+
+        for(Choice choice : choices){
+            addButton(choice);
+        }
     }
 
     @Override
@@ -117,12 +166,12 @@ public class dialogController implements Initializable {
         inventoryButton.setText("Inventory");
         dialogBox.setText(interaction.getText());
 
+        clearButtons();
+
         ArrayList<Choice> choices = interaction.getChoices();
-        dialogOption1.setText(choices.get(0).getValue());
-        dialogOption2.setText(choices.get(1).getValue());
-        dialogOption3.setText(choices.get(2).getValue());
-        dialogOption4.setText(choices.get(3).getValue());
-        dialogOption5.setText(choices.get(4).getValue());
+        for (Choice choice : choices) {
+            addButton(choice);
+        }
         suspectNameLabel.setText(currentPerson.getFirstName() + " " + currentPerson.getLastName());
         suspectPicture.setImage(new Image("/front/"+currentPerson.getFirstName()+".png"));
         suspectDesc.setText("");
