@@ -113,14 +113,6 @@
                         <Font name="JetBrains Mono Regular Nerd Font Complete" size="13.0" />
                      </font>
                   </Button>
-                  <Button fx:id="dialogOption6" alignment="BASELINE_LEFT" focusTraversable="false" mnemonicParsing="false" onAction="#chooseOption6" prefHeight="26.0" prefWidth="745.0" style="-fx-border-radius: 15; -fx-border-color: #1a0902; -fx-background-color: #965238; -fx-background-radius: 15;" text="Button" textFill="WHITE" wrapText="true">
-                     <VBox.margin>
-                        <Insets bottom="16.0" top="16.0" />
-                     </VBox.margin>
-                     <font>
-                        <Font name="JetBrains Mono Regular Nerd Font Complete" size="13.0" />
-                     </font>
-                  </Button>
                </children>
                <padding>
                   <Insets left="96.0" right="96.0" />

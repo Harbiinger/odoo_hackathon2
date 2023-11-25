@@ -42,13 +42,19 @@ public class dialogController implements Initializable {
     private ImageView suspectPicture;
 
     @FXML
-    private TextField dialogOption1;
+    private Button dialogOption1;
 
     @FXML
-    private TextField dialogOption2;
+    private Button dialogOption2;
 
     @FXML
-    private TextField dialogOption3;
+    private Button dialogOption3;
+
+    @FXML
+    private Button dialogOption4;
+
+    @FXML
+    private Button dialogOption5;
 
     @FXML
     private Label suspectNameLabel;
@@ -74,15 +80,33 @@ public class dialogController implements Initializable {
     }
 
     public void chooseOption1(ActionEvent actionEvent) throws IOException {
-        System.out.println("Option 1");
+        changeInteraction(0);
     }
 
     public void chooseOption2(ActionEvent actionEvent) throws IOException {
-        System.out.println("Option 2");
+        changeInteraction(1);
     }
 
     public void chooseOption3(ActionEvent actionEvent) throws IOException {
-        System.out.println("Option 3");
+        changeInteraction(2);
+    }
+
+    public void chooseOption4(ActionEvent actionEvent) throws IOException {
+        changeInteraction(3);
+    }
+
+    public void chooseOption5(ActionEvent actionEvent) throws IOException {
+        changeInteraction(4);
+    }
+
+    public void changeInteraction(int choiceIndex) {
+        Person currentPerson = App.currentPerson;
+        Interaction interaction = currentPerson.getCurrentInteraction();
+        int nextInteractionId = interaction.getChoices().get(choiceIndex).getInteractionDir();
+        currentPerson.changeInteraction(nextInteractionId);
+        dialogBox.setText(currentPerson.getCurrentInteraction().getText());
+        ArrayList<Choice> choices = currentPerson.getCurrentInteraction().getChoices();
+        dialogOption1.setText(choices.get(choiceIndex).getValue());
     }
 
     @Override
@@ -97,6 +121,8 @@ public class dialogController implements Initializable {
         dialogOption1.setText(choices.get(0).getValue());
         dialogOption2.setText(choices.get(1).getValue());
         dialogOption3.setText(choices.get(2).getValue());
+        dialogOption4.setText(choices.get(3).getValue());
+        dialogOption5.setText(choices.get(4).getValue());
         suspectNameLabel.setText(currentPerson.getFirstName() + " " + currentPerson.getLastName());
         suspectPicture.setImage(new Image("/front/"+currentPerson.getFirstName()+".png"));
         suspectDesc.setText("");
