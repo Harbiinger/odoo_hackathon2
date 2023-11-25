@@ -147,8 +147,11 @@ public class dialogController implements Initializable {
         Interaction interaction = currentPerson.getCurrentInteraction();
         Choice currentChoice = interaction.getChoices().get(choiceIndex);
         if (currentChoice.getModifyChoices() != null) {
+            System.out.println("Choice : " + currentChoice.getValue());
             for (ModifyChoice modifyChoice : currentChoice.getModifyChoices()) {
-                App.game.modifyChoice(currentPerson, modifyChoice.getChoiceId(), modifyChoice.getInteractionId(), modifyChoice.isUnlock());
+                Person p = App.game.talk(modifyChoice.getName());
+                System.out.println(p.getFirstName() + " " + p.getLastName());
+                App.game.modifyChoice(p, modifyChoice.getChoiceId(), modifyChoice.getInteractionId(), !modifyChoice.isUnlock());
             }
         }
         int nextInteractionId = currentChoice.getInteractionDir();

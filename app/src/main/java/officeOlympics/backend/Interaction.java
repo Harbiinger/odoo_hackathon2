@@ -32,6 +32,10 @@ public class Interaction {
         return res;
     }
 
+    public ArrayList<Choice> getAllChoices() {
+        return choices;
+    }
+
     public String getText() {
         return text;
     }

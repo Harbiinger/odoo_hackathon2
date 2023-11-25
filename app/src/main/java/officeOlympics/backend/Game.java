@@ -50,7 +50,7 @@ public class Game {
                         int choiceId = choiceNode.get("id").asInt();
                         int interactionDir = choiceNode.get("interactionDir").asInt();
                         boolean isLocked = choiceNode.get("isLocked").asBoolean();
-                        ArrayNode eventNode = (ArrayNode) choiceNode.get("event");
+                        ArrayNode eventNode = (ArrayNode) choiceNode.get("events");
                         ArrayList<ModifyChoice> modifyChoices = new ArrayList<>();
                         if (eventNode != null) {
                             for (JsonNode event : eventNode) {
@@ -64,13 +64,13 @@ public class Game {
 
                         String value = choiceNode.get("value").asText();
 
-                        choices.add(new Choice(choiceId, interactionDir, isLocked, value, null));
+                        choices.add(new Choice(choiceId, interactionDir, isLocked, value, modifyChoices));
                     }
 
                     interactions.add(new Interaction(interactionId, choices, interactionText));
                 }
 
-                Person person = new Person(lastName, firstName, profession,interactions);
+                Person person = new Person(lastName, nationality, firstName, profession,interactions);
                 people.put(person.getLastName(), person);
             }
         } catch (Exception e) {
@@ -96,7 +96,7 @@ public class Game {
 
     public void modifyChoice(Person p, int choiceId, int interactionDir, boolean setLock) {
         Interaction interaction = p.getInteractions().get(interactionDir);
-        Choice choice = interaction.getChoices().get(choiceId);
+        Choice choice = interaction.getAllChoices().get(choiceId);
         choice.setLock(setLock);
     }
 }

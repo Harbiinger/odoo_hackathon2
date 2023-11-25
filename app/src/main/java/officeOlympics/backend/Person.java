@@ -12,14 +12,16 @@ public class Person {
     private String firstName;
     @JsonProperty("profession")
     private String profession;
+    private String nationality;
     private int currentInteraction;
     private ArrayList<Interaction> interactions;
 
-    public Person(String lastName, String firstName, String profession ,ArrayList<Interaction> interactions) {
+    public Person(String lastName,String nationality ,String firstName, String profession ,ArrayList<Interaction> interactions) {
         this.lastName = lastName;
         this.firstName = firstName;
         this.profession = profession;
         this.interactions = interactions;
+        this.nationality = nationality;
         currentInteraction = 0;
     }
 
