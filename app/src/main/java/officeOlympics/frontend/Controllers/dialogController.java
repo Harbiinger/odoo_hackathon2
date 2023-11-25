@@ -108,6 +108,7 @@ public class dialogController implements Initializable {
 
 
     public void back(ActionEvent actionEvent) throws IOException {
+        App.currentPerson.reset();
         URL url = App.class.getResource("/front/susView.fxml");
         pane = FXMLLoader.load(url);
         stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
@@ -121,33 +122,35 @@ public class dialogController implements Initializable {
     }
 
     public void chooseOption1(ActionEvent actionEvent) throws IOException {
-        changeInteraction(0);
+        changeInteraction(0, actionEvent);
     }
 
     public void chooseOption2(ActionEvent actionEvent) throws IOException {
-        changeInteraction(1);
+        changeInteraction(1, actionEvent);
     }
 
     public void chooseOption3(ActionEvent actionEvent) throws IOException {
-        changeInteraction(2);
+        changeInteraction(2,actionEvent);
     }
 
     public void chooseOption4(ActionEvent actionEvent) throws IOException {
-        changeInteraction(3);
+        changeInteraction(3, actionEvent);
     }
 
     public void chooseOption5(ActionEvent actionEvent) throws IOException {
-        changeInteraction(4);
+        changeInteraction(4, actionEvent);
     }
 
-    public void changeInteraction(int choiceIndex) {
+    public void changeInteraction(int choiceIndex, ActionEvent actionEvent) throws IOException {
         Person currentPerson = App.currentPerson;
         Interaction interaction = currentPerson.getCurrentInteraction();
         int nextInteractionId = interaction.getChoices().get(choiceIndex).getInteractionDir();
+        if (nextInteractionId == -1) {
+            back(actionEvent);
+        }
         currentPerson.changeInteraction(nextInteractionId);
         dialogBox.setText(currentPerson.getCurrentInteraction().getText());
         ArrayList<Choice> choices = currentPerson.getCurrentInteraction().getChoices();
-        dialogOption1.setText(choices.get(choiceIndex).getValue());
         clearButtons();
 
         for(Choice choice : choices){
