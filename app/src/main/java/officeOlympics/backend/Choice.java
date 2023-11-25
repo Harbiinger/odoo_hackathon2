@@ -8,6 +8,7 @@ public class Choice {
     private boolean isLock;
     private final String value;
 
+    private boolean seen = false;
 
     private ArrayList<ModifyChoice> modifyChoices;
 
@@ -49,5 +50,13 @@ public class Choice {
         res += "val = " + value + " | ";
         res += "direction= " + interactionDir;
         return res;
+    }
+
+    public void saw() {
+        this.seen = true;
+    }
+
+    public boolean getSeeb() {
+        return this.seen;
     }
 }

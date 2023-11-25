@@ -249,7 +249,7 @@
         },
         {
           "id": 1,
-          "text": "No it was my first competing in an international competition. An unforgettable experience if you want my feedback.",
+          "text": "No it was my first time competing in an international competition. An unforgettable experience if you want my feedback.",
           "choices": [
             {
               "id": 0,
@@ -295,8 +295,8 @@
           "choices": [
             {
               "id": 0,
-              "interactionDir": -1,
-              "value": "Interesting, thank you. [leave]",
+              "interactionDir": 0,
+              "value": "Interesting, thank you.",
               "isLocked": false
             }
           ]
@@ -307,8 +307,8 @@
           "choices": [
             {
               "id": 0,
-              "interactionDir": -1,
-              "value": "Interesting, thank you. [leave]",
+              "interactionDir": 0,
+              "value": "Interesting, thank you.",
               "isLocked": false
             }
           ]
@@ -331,16 +331,16 @@
       "lastName": "Ackermann",
       "firstName": "Karl",
       "profession": "Cyclist",
-      "nationality": "Italian",
+      "nationality": "German",
       "interactions": [
         {
           "id": 0,
-          "text": "Hello there",
+          "text": "Leave me alone",
           "choices": [
             {
               "id": 0,
-              "interactionDir": -1,
-              "value": "General kenobi [leave]",
+              "interactionDir": 1,
+              "value": "Do you think your defeat could be cause by cheat ?",
               "isLocked": false
             },
             {

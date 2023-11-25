@@ -15,7 +15,7 @@
 
 <StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="officeOlympics.frontend.Controllers.dialogController">
    <children>
-      <ImageView fx:id="dialogImageHolder" fitHeight="720.0" fitWidth="1280.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="background" fitHeight="720.0" fitWidth="1280.0" pickOnBounds="true" preserveRatio="true" />
       <BorderPane prefHeight="200.0" prefWidth="200.0">
          <top>
             <Pane prefHeight="99.0" prefWidth="1280.0" BorderPane.alignment="CENTER">
