@@ -41,6 +41,9 @@
                                  <VBox.margin>
                                     <Insets top="16.0" />
                                  </VBox.margin>
+                                 <font>
+                                    <Font size="19.0" />
+                                 </font>
                               </Label>
                            </children>
                            <padding>
@@ -78,6 +81,9 @@
                                  <VBox.margin>
                                     <Insets top="16.0" />
                                  </VBox.margin>
+                                 <font>
+                                    <Font size="19.0" />
+                                 </font>
                               </Label>
                            </children>
                            <padding>
@@ -110,6 +116,9 @@
                                  <VBox.margin>
                                     <Insets top="16.0" />
                                  </VBox.margin>
+                                 <font>
+                                    <Font size="19.0" />
+                                 </font>
                               </Label>
                            </children>
                            <padding>
@@ -142,6 +151,9 @@
                                  <VBox.margin>
                                     <Insets top="16.0" />
                                  </VBox.margin>
+                                 <font>
+                                    <Font size="19.0" />
+                                 </font>
                               </Label>
                            </children>
                            <padding>
@@ -164,12 +176,12 @@
          <top>
             <Pane prefHeight="90.0" prefWidth="1280.0" BorderPane.alignment="TOP_CENTER">
                <children>
-                  <Button fx:id="inventoryButton" layoutX="23.0" layoutY="29.0" mnemonicParsing="false" onAction="#displayInventory" text="i" textAlignment="CENTER">
+                  <Button fx:id="accuseButton" layoutX="1117.0" layoutY="27.0" mnemonicParsing="false" onAction="#accuse" style="-fx-background-color: #965238; -fx-border-color: #1a0902; -fx-border-radius: 18; -fx-border-width: 3; -fx-background-radius: 24;" text="Accuse" textFill="WHITE">
                      <font>
-                        <Font name="JetBrains Mono Regular Nerd Font Complete" size="16.0" />
+                        <Font name="JetBrains Mono Regular Nerd Font Complete" size="18.0" />
                      </font>
                   </Button>
-                  <Button fx:id="accuseButton" layoutX="1117.0" layoutY="27.0" mnemonicParsing="false" onAction="#accuse" text="Accuse">
+                  <Button fx:id="inventoryButton" layoutX="27.0" layoutY="24.0" mnemonicParsing="false" onAction="#displayInventory" style="-fx-background-color: #965238; -fx-border-color: #1a0902; -fx-border-radius: 16; -fx-border-width: 3; -fx-background-radius: 16;" text="i" textFill="WHITE">
                      <font>
                         <Font name="JetBrains Mono Regular Nerd Font Complete" size="18.0" />
                      </font>
@@ -180,9 +192,9 @@
          <bottom>
             <Pane prefHeight="102.0" prefWidth="1280.0" BorderPane.alignment="BOTTOM_CENTER">
                <children>
-                  <Button fx:id="changingRoomButton" alignment="CENTER" contentDisplay="CENTER" layoutX="514.0" layoutY="33.0" mnemonicParsing="false" onAction="#goToChangingRoom" text="Inspect the changing room" textAlignment="CENTER">
+                  <Button fx:id="changingRoomButton" layoutX="490.0" layoutY="30.0" mnemonicParsing="false" onAction="#goToChangingRoom" style="-fx-background-color: #965238; -fx-border-color: #1a0902; -fx-border-radius: 16; -fx-border-width: 3; -fx-background-radius: 16;" text="Inspect the changing room" textFill="WHITE">
                      <font>
-                        <Font size="18.0" />
+                        <Font name="JetBrains Mono Regular Nerd Font Complete" size="18.0" />
                      </font>
                   </Button>
                </children>
