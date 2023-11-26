@@ -21,7 +21,7 @@
          <center>
             <StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="540.0" BorderPane.alignment="CENTER">
                <children>
-                  <GridPane id="grid" alignment="CENTER" gridLinesVisible="true" opacity="0.8" style="-fx-background-color: #965238;">
+                  <GridPane fx:id="grid" alignment="CENTER" gridLinesVisible="true" opacity="0.8" style="-fx-background-color: #965238;">
                     <columnConstraints>
                       <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                       <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -39,7 +39,7 @@
          <top>
             <Pane prefHeight="81.0" prefWidth="1280.0" BorderPane.alignment="CENTER">
                <children>
-                  <Button layoutX="29.0" layoutY="28.0" mnemonicParsing="false" style="-fx-border-radius: 15; -fx-border-color: #1a0902; -fx-background-color: #965238; -fx-background-radius: 32; -fx-border-width: 4;" text="Back" textFill="WHITE">
+                  <Button fx:id="backButton" onAction="#back" layoutX="29.0" layoutY="28.0" mnemonicParsing="false" style="-fx-border-radius: 15; -fx-border-color: #1a0902; -fx-background-color: #965238; -fx-background-radius: 32; -fx-border-width: 4;" text="Back" textFill="WHITE">
                      <font>
                         <Font name="Arial Bold" size="18.0" />
                      </font></Button>

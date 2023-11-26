@@ -24,11 +24,6 @@
                         <Font name="System Bold" size="16.0" />
                      </font>
                   </Button>
-                  <Button fx:id="inventoryButton" layoutX="157.0" layoutY="26.0" mnemonicParsing="false" onAction="#displayInventory" prefHeight="48.0" prefWidth="48.0" style="-fx-background-color: #0000; -fx-border-color: BLACK; -fx-border-radius: 24; -fx-border-width: 2;" text="i">
-                     <font>
-                        <Font name="System Bold" size="22.0" />
-                     </font>
-                  </Button>
                </children>
             </Pane>
          </top>

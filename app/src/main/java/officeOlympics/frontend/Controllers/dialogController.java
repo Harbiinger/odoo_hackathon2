@@ -42,9 +42,6 @@ public class dialogController implements Initializable {
     private Button backButton;
 
     @FXML
-    private Button inventoryButton;
-
-    @FXML
     private ImageView suspectPicture;
 
     @FXML
@@ -157,10 +154,6 @@ public class dialogController implements Initializable {
         stage.show();
     }
 
-    public void displayInventory(ActionEvent actionEvent) throws IOException {
-        System.out.println("Display Inventory");
-    }
-
     public void chooseOption1(ActionEvent actionEvent) throws IOException {
         changeInteraction(0, actionEvent);
     }
@@ -222,7 +215,6 @@ public class dialogController implements Initializable {
         Person currentPerson = App.currentPerson;
         Interaction interaction = currentPerson.getCurrentInteraction();
         backButton.setText("Back");
-        inventoryButton.setText("Inventory");
         dialogBox.setText(interaction.getText());
         dialogBox.setTextFill(Color.WHITE);
         dialogBox.setFont(Font.font("Arial", FontWeight.BOLD, 18));

@@ -190,8 +190,13 @@ public class susViewController  {
         }
     }
 
-    public void displayInventory() {
-        System.out.println("Display Inventory");
+    public void displayInventory() throws IOException {
+        URL url = App.class.getResource("/front/inventory.fxml");
+        pane = FXMLLoader.load(url);
+        stage = App.stage;
+        scene = new Scene(pane);
+        stage.setScene(scene);
+        stage.show();
     }
 
     public void switchAccuseMode() {

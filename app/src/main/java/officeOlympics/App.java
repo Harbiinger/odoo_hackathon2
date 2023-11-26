@@ -12,21 +12,25 @@ import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 import officeOlympics.backend.Game;
 import officeOlympics.backend.Person;
+import officeOlympics.backend.Object;
 
 public class App extends Application {
 
     public static ArrayList<Person> peopleList;
     public static Person currentPerson;
+    public static ArrayList<Object> objectsList = new ArrayList();
 
     public static Game game;
     public static Stage stage;
     public static String mode = "modern"; // ou antique
     public static boolean accuseMode = false;
 
+    public static String modernObject1Desc = "Blood test results:\n Kipet Trovitchi: negative\n Marcello Massimo: negative\n Bjorn Seam: negative\n Karl Akerman: negative";
+
     public static void main(String[] args) {
         game = new Game("jo.json");
+        objectsList.add(new Object("Object1", modernObject1Desc));
         peopleList = game.getPersons();
-        System.out.println(peopleList.size());
         launch(args);
     }
 
@@ -37,7 +41,6 @@ public class App extends Application {
 
         try {
             URL url = App.class.getResource("/front/eraSelection.fxml");
-            System.out.println(url);
             FXMLLoader fxmlLoader = new FXMLLoader(url);
             Parent parent = fxmlLoader.load();
             Scene scene = new Scene(parent, 1280, 720);
