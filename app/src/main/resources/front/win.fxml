@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
 <StackPane xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="officeOlympics.frontend.Controllers.winController">
     <children>
@@ -10,5 +13,13 @@
                 <Image url="@winBackground.png" />
             </image>
         </ImageView>
+      <Label prefHeight="18.0" prefWidth="862.0" text="Congrats you won !" textFill="#fffefe">
+         <font>
+            <Font name="System Bold" size="50.0" />
+         </font>
+         <StackPane.margin>
+            <Insets bottom="600.0" right="400.0" />
+         </StackPane.margin>
+      </Label>
     </children>
 </StackPane>
