@@ -17,6 +17,7 @@ import javafx.scene.shape.Polygon;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import officeOlympics.App;
+import officeOlympics.backend.Object;
 
 public class lockerRoomController {
 
@@ -50,18 +51,14 @@ public class lockerRoomController {
 
         System.out.println("Searching locker");
 
-        Alert alert = new Alert(Alert.AlertType.INFORMATION);
-        Text alertText = new Text("You found 20 000$ in the Bjorn Saem's locker");
-        alertText.setWrappingWidth(270);
-        alert.getDialogPane().setContent(alertText);
-        alert.setTitle("Money found");
-        alert.showAndWait();
-
         App.moneyFound = true;
         objectFoundLabel.setVisible(App.moneyFound);
         openableLocker.setVisible(!App.moneyFound);
 
         // TODO: add money to inventory
+        Object money = new Object("money", "20 000$ found in Bjorn's locker.");
+        App.objectsList.add(money);
+
     }
 
     public void initialize() {
