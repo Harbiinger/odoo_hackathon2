@@ -83,10 +83,15 @@ public class dialogController implements Initializable {
     public void clearButtons() {
         buttonNumber = 0;
         dialogOption1.setVisible(false);
+        dialogOption1.setStyle("-fx-border-radius: 15; -fx-border-color: #1a0902; -fx-background-color: #965238; -fx-background-radius: 15;");
         dialogOption2.setVisible(false);
+        dialogOption2.setStyle("-fx-border-radius: 15; -fx-border-color: #1a0902; -fx-background-color: #965238; -fx-background-radius: 15;");
         dialogOption3.setVisible(false);
+        dialogOption3.setStyle("-fx-border-radius: 15; -fx-border-color: #1a0902; -fx-background-color: #965238; -fx-background-radius: 15;");
         dialogOption4.setVisible(false);
+        dialogOption4.setStyle("-fx-border-radius: 15; -fx-border-color: #1a0902; -fx-background-color: #965238; -fx-background-radius: 15;");
         dialogOption5.setVisible(false);
+        dialogOption5.setStyle("-fx-border-radius: 15; -fx-border-color: #1a0902; -fx-background-color: #965238; -fx-background-radius: 15;");
     }
 
     public void addButton(Choice text) {
