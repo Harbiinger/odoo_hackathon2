@@ -419,7 +419,14 @@
         {
           "id": 1,
           "text": "Mmh yeah could be. I heard security was not great this year.",
-          "choices": []
+          "choices": [
+            {
+              "id": 0,
+              "interactionDir": -1,
+              "value": "Thank you. [leave]",
+              "isLocked": false
+            }
+          ]
         }
       ]
     }
