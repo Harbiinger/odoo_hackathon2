@@ -69,7 +69,7 @@ public class dialogController implements Initializable {
     private Label suspectDesc;
 
     @FXML
-    private TextArea dialogBox;
+    private Button dialogBox;
 
     @FXML
     private ImageView background;
@@ -100,7 +100,7 @@ public class dialogController implements Initializable {
                 dialogOption1.setVisible(true);
                 dialogOption1.setText(text.getValue());
                 dialogOption1.setTextFill(Color.WHITE);
-                dialogOption1.setFont(Font.font("Arial", FontWeight.BOLD, 18));
+                dialogOption1.setFont(Font.font("Arial", FontWeight.BOLD, 14));
                 if (text.getSeeb()) {
                     dialogOption1.setStyle("-fx-border-radius: 15; -fx-border-color: #1a0902; -fx-background-color: #757474; -fx-background-radius: 15;");
                 }
@@ -109,36 +109,36 @@ public class dialogController implements Initializable {
                 dialogOption2.setVisible(true);
                 dialogOption2.setText(text.getValue());
                 dialogOption2.setTextFill(Color.WHITE);
-                dialogOption2.setFont(Font.font("Arial", FontWeight.BOLD, 18));
+                dialogOption2.setFont(Font.font("Arial", FontWeight.BOLD, 14));
                 if (text.getSeeb()) {
-                    dialogOption1.setStyle("-fx-border-radius: 15; -fx-border-color: #1a0902; -fx-background-color: #757474; -fx-background-radius: 15;");
+                    dialogOption2.setStyle("-fx-border-radius: 15; -fx-border-color: #1a0902; -fx-background-color: #757474; -fx-background-radius: 15;");
                 }
                 break;
             case 2:
                 dialogOption3.setVisible(true);
                 dialogOption3.setText(text.getValue());
                 dialogOption3.setTextFill(Color.WHITE);
-                dialogOption3.setFont(Font.font("Arial", FontWeight.BOLD, 18));
+                dialogOption3.setFont(Font.font("Arial", FontWeight.BOLD, 14));
                 if (text.getSeeb()) {
-                    dialogOption1.setStyle("-fx-border-radius: 15; -fx-border-color: #1a0902; -fx-background-color: #757474; -fx-background-radius: 15;");
+                    dialogOption3.setStyle("-fx-border-radius: 15; -fx-border-color: #1a0902; -fx-background-color: #757474; -fx-background-radius: 15;");
                 }
                 break;
             case 3:
                 dialogOption4.setVisible(true);
                 dialogOption4.setText(text.getValue());
                 dialogOption4.setTextFill(Color.WHITE);
-                dialogOption4.setFont(Font.font("Arial", FontWeight.BOLD, 18));
+                dialogOption4.setFont(Font.font("Arial", FontWeight.BOLD, 14));
                 if (text.getSeeb()) {
-                    dialogOption1.setStyle("-fx-border-radius: 15; -fx-border-color: #1a0902; -fx-background-color: #757474; -fx-background-radius: 15;");
+                    dialogOption4.setStyle("-fx-border-radius: 15; -fx-border-color: #1a0902; -fx-background-color: #757474; -fx-background-radius: 15;");
                 }
                 break;
             case 4:
                 dialogOption5.setVisible(true);
                 dialogOption5.setText(text.getValue());
                 dialogOption5.setTextFill(Color.WHITE);
-                dialogOption5.setFont(Font.font("Arial", FontWeight.BOLD, 18));
+                dialogOption5.setFont(Font.font("Arial", FontWeight.BOLD, 14));
                 if (text.getSeeb()) {
-                    dialogOption1.setStyle("-fx-border-radius: 15; -fx-border-color: #1a0902; -fx-background-color: #757474; -fx-background-radius: 15;");
+                    dialogOption5.setStyle("-fx-border-radius: 15; -fx-border-color: #1a0902; -fx-background-color: #757474; -fx-background-radius: 15;");
                 }
                 break;
             default:
