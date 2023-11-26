@@ -82,7 +82,7 @@
             {
               "id" : 7,
               "interactionDir" : 0,
-              "value" : "Back to previous choices",
+              "value" : "[Back to previous choices]",
               "isLocked" : false
             }
           ]
@@ -237,6 +237,15 @@
               "id": 1,
               "interactionDir": 5,
               "value": "Do you think someone could have cheat during the competition ?",
+              "events": [
+                {
+                  "id": 0,
+                  "name": "Ackermann",
+                  "unlock": true,
+                  "interactionId": 0,
+                  "choiceId": 1
+                }
+              ],
               "isLocked": false
             },
             {
@@ -244,6 +253,12 @@
               "interactionDir": -1,
               "value": "Nothing, thank you. [leave]",
               "isLocked": false
+            },
+            {
+              "id": 3,
+              "interactionDir": 6,
+              "value": "Where does your information about the security of the event come from?",
+              "isLocked": true
             }
           ]
         },
@@ -324,6 +339,18 @@
               "isLocked": false
             }
           ]
+        },
+        {
+          "id": 6,
+          "text": "Hum I don't know. I'm just used to this kind of event and usually athletes are more supervised",
+          "choices": [
+            {
+              "id": 0,
+              "interactionDir": 0,
+              "value": "[Back to previous choices]",
+              "isLocked": false
+            }
+          ]
         }
       ]
     },
@@ -339,17 +366,31 @@
           "choices": [
             {
               "id": 0,
-              "interactionDir": 1,
-              "value": "Do you think your defeat could be cause by cheat ?",
+              "interactionDir": -1,
+              "value": "[leave]",
               "isLocked": false
             },
             {
               "id": 1,
-              "interactionDir": -1,
-              "value": "oui",
+              "interactionDir": 1,
+              "value": "Do you think your defeat could be cause by cheat ?",
+              "events": [
+                {
+                  "id": 0,
+                  "name": "Massimo",
+                  "unlock": true,
+                  "interactionId": 0,
+                  "choiceId": 3
+                }
+              ],
               "isLocked": true
             }
           ]
+        },
+        {
+          "id": 1,
+          "text": "Mmh yeah could be. I heard security was not great this year.",
+          "choices": []
         }
       ]
     }

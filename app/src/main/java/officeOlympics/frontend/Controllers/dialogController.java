@@ -224,6 +224,8 @@ public class dialogController implements Initializable {
         backButton.setText("Back");
         inventoryButton.setText("Inventory");
         dialogBox.setText(interaction.getText());
+        dialogBox.setTextFill(Color.WHITE);
+        dialogBox.setFont(Font.font("Arial", FontWeight.BOLD, 18));
 
         clearButtons();
 
