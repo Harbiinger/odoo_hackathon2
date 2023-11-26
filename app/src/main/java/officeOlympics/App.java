@@ -8,11 +8,12 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 import officeOlympics.backend.Game;
-import officeOlympics.backend.Person;
 import officeOlympics.backend.Object;
+import officeOlympics.backend.Person;
 
 public class App extends Application {
 
@@ -24,6 +25,7 @@ public class App extends Application {
     public static Stage stage;
     public static String mode = "modern"; // ou antique
     public static boolean accuseMode = false;
+    public static boolean moneyFound;
 
     public static String modernObject1Desc = "Blood test results:\n Kipet Trovitchi: negative\n Marcello Massimo: negative\n Bjorn Seam: negative\n Karl Akerman: negative";
 
@@ -45,6 +47,7 @@ public class App extends Application {
             Parent parent = fxmlLoader.load();
             Scene scene = new Scene(parent, 1280, 720);
             primaryStage.setScene(scene);
+            primaryStage.getIcons().add(new Image("/front/logo.png"));
             primaryStage.setResizable(false);
             primaryStage.setTitle("The Olympics Office");
             primaryStage.show();

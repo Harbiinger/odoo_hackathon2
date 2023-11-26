@@ -222,7 +222,7 @@
         "profession": "Chariot racer",
         "nationality": "Greek",
         "description": "",
-        "isGuilty": false,
+        "isGuilty": true,
         "interactions": [
           {
             "id": 0,
