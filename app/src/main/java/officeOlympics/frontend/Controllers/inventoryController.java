@@ -14,6 +14,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.event.ActionEvent;
 import javafx.scene.Parent;
 import javafx.scene.control.Tooltip;
+import javafx.scene.effect.BoxBlur;
 
 public class inventoryController {
 
@@ -31,6 +32,8 @@ public class inventoryController {
     public void initialize() {
         System.out.println(App.objectsList.size());
         background.setImage(new Image("/front/"+ App.mode +"InventoryBackground.png"));
+        BoxBlur blur = new BoxBlur(7, 7, 3);
+        background.setEffect(blur); 
         int i = 0, j = 0;
         for (Object o : App.objectsList) {
             ImageView iv = new ImageView(new Image("/front/"+ App.mode + o.getName() + ".png"));
