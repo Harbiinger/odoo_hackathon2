@@ -273,11 +273,11 @@ public class susViewController  {
         }
         else{
             accuseButton.setStyle("-fx-background-color: #965238; -fx-border-color: #1a0902; -fx-border-radius: 16; -fx-border-width: 4; -fx-background-radius: 32");
-            accuseButton.setCursor(Cursor.DEFAULT);
-            suspect1Button.setCursor(Cursor.DEFAULT);
-            suspect2Button.setCursor(Cursor.DEFAULT);
-            suspect3Button.setCursor(Cursor.DEFAULT);
-            suspect4Button.setCursor(Cursor.DEFAULT);
+            //accuseButton.setCursor(Cursor.DEFAULT);
+            //suspect1Button.setCursor(Cursor.DEFAULT);
+            //suspect2Button.setCursor(Cursor.DEFAULT);
+            //suspect3Button.setCursor(Cursor.DEFAULT);
+            //suspect4Button.setCursor(Cursor.DEFAULT);
             // Create a DropShadow effect with a white color
             DropShadow haloEffect = new DropShadow();
             haloEffect.setColor(Color.WHITE);
