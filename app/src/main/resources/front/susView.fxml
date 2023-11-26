@@ -197,7 +197,7 @@
          <bottom>
             <Pane prefHeight="102.0" prefWidth="1280.0" BorderPane.alignment="BOTTOM_CENTER">
                <children>
-                  <Button fx:id="changingRoomButton" layoutX="490.0" layoutY="30.0" mnemonicParsing="false" onAction="#goToChangingRoom" style="-fx-background-color: #965238; -fx-border-color: #1a0902; -fx-border-radius: 16; -fx-border-width: 4; -fx-background-radius: 32;" text="Inspect the changing room" textFill="WHITE">
+                  <Button fx:id="lockerRoomButton" layoutX="490.0" layoutY="30.0" mnemonicParsing="false" onAction="#goToLockerRoom" style="-fx-background-color: #965238; -fx-border-color: #1a0902; -fx-border-radius: 16; -fx-border-width: 4; -fx-background-radius: 32;" text="Inspect the locker-room" textFill="WHITE">
                      <font>
                         <Font name="Arial Bold" size="18.0" />
                      </font>

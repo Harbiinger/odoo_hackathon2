@@ -23,11 +23,6 @@
                   <Font name="System Bold" size="16.0" />
                </font>
             </Button>
-            <Button fx:id="inventoryButton" layoutX="157.0" layoutY="26.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="48.0" style="-fx-background-color: #965238; -fx-border-color: #1a0902; -fx-border-radius: 16; -fx-border-width: 4; -fx-background-radius: 64;" text="Back" textFill="WHITE" text="i">
-               <font>
-                  <Font name="System Bold" size="22.0" />
-               </font>
-            </Button>
          </children>
       </Pane>
    </children>

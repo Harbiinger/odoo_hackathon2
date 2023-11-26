@@ -235,10 +235,10 @@ public class susViewController  {
         stage.show();
     }
 
-    public void goToChangingRoom(ActionEvent actionEvent) throws IOException {
+    public void goToLockerRoom(ActionEvent actionEvent) throws IOException {
         URL url = App.class.getResource("/front/lockerRoom.fxml");
         pane = FXMLLoader.load(url);
-        stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
+        stage = App.stage;
         scene = new Scene(pane);
         stage.setScene(scene);
         stage.show();
