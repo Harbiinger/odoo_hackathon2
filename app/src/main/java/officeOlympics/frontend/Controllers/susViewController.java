@@ -81,8 +81,13 @@ public class susViewController  {
     @FXML
     private Button accuseButton;
 
+    @FXML
+    private Button lockerRoomButton;
 
     public void initialize(){
+        if (App.mode == "antique") {
+            lockerRoomButton.setVisible(false);
+        }
         // bg
         susBackground.setImage(new Image("/front/"+ App.mode+"Background.png"));
         BoxBlur blur = new BoxBlur(7, 7, 3);
