@@ -3,7 +3,6 @@ package officeOlympics.frontend.Controllers;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
-import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
@@ -20,7 +19,7 @@ public class winController {
     private ImageView winImage;
 
     public void initialize() {
-        winImage.setImage(new javafx.scene.image.Image("/front/winBackground.png"));
+        winImage.setImage(new javafx.scene.image.Image("/front/" + App.mode + "WinBackground.png"));
     }
 
     public void backToEra(MouseEvent actionEvent) throws IOException {
