@@ -13,6 +13,7 @@ import javafx.scene.control.Button;
 import javafx.stage.Stage;
 import officeOlympics.App;
 import officeOlympics.backend.Game;
+import officeOlympics.backend.Object;
 
 public class eraSelectController {
 
@@ -29,6 +30,9 @@ public class eraSelectController {
     public void selectModernEra(ActionEvent actionEvent) throws IOException {
         App.mode = "modern";
         App.game = new Game("jo.json");
+        App.objectsList.clear();
+        String modernObject1Desc = "Blood test results:\n Kipet Trovitchi: negative\n Marcello Massimo: negative\n Bjorn Seam: negative\n Karl Akerman: negative";
+        App.objectsList.add(new Object("Object1", modernObject1Desc));
         App.peopleList = App.game.getPersons();
         URL url = App.class.getResource("/front/susView.fxml");
         pane = FXMLLoader.load(url);
@@ -42,6 +46,9 @@ public class eraSelectController {
         App.mode = "antique";
         App.game = new Game("olympe.json");
         App.peopleList = App.game.getPersons();
+        App.objectsList.clear();
+        Object coca = new Object("coca", "Coca leaf found in Yapadelis' stuff.");
+        App.objectsList.add(coca);
         URL url = App.class.getResource("/front/susView.fxml");
         pane = FXMLLoader.load(url);
         stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();

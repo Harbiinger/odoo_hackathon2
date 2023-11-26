@@ -29,6 +29,7 @@ public class inventoryController {
     private ImageView background;
 
     public void initialize() {
+        System.out.println(App.objectsList.size());
         background.setImage(new Image("/front/"+ App.mode +"InventoryBackground.png"));
         int i = 0, j = 0;
         for (Object o : App.objectsList) {
