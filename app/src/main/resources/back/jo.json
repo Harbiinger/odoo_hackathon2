@@ -161,7 +161,7 @@
       "interactions" : [
         {
           "id": 0,
-          "text": "Hallo, Are you here for an autograph from today's winner? Hahaha just jokin' what d' you want ?",
+          "text": "Hallo, Are you here for an autograph from today's winner? Hahaha just jokin' what do you want ?",
           "choices": [
             {
               "id": 0,
@@ -180,6 +180,12 @@
               "interactionDir": -1,
               "value": "Bye. [leave]",
               "isLocked": false
+            },
+            {
+              "id": 3,
+              "interactionDir": 5,
+              "value": "We found 20 000$ in your locker. Any comments on this ?",
+              "isLocked": true
             }
           ]
         },
@@ -222,6 +228,18 @@
         {
           "id": 4,
           "text": "......",
+          "choices": [
+            {
+              "id": 0,
+              "interactionDir": -1,
+              "value": "[leave]",
+              "isLocked": false
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "Oh no please let me keep this first place.. I just sell a electronic device to the german. I beg you",
           "choices": [
             {
               "id": 0,

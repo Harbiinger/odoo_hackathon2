@@ -97,6 +97,7 @@ public class Game {
     }
 
     public void modifyChoice(Person p, int choiceId, int interactionDir, boolean setLock) {
+        System.out.println("Modify choice");
         Interaction interaction = p.getInteractions().get(interactionDir);
         Choice choice = interaction.getAllChoices().get(choiceId);
         choice.setLock(setLock);

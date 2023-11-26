@@ -55,7 +55,8 @@ public class lockerRoomController {
         objectFoundLabel.setVisible(App.moneyFound);
         openableLocker.setVisible(!App.moneyFound);
 
-        // TODO: add money to inventory
+        App.game.modifyChoice(App.game.talk("Seam"), 3, 0, false);
+
         Object money = new Object("money", "20 000$ found in Bjorn's locker.");
         App.objectsList.add(money);
 
