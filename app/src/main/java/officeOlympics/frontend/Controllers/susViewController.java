@@ -257,7 +257,19 @@ public class susViewController  {
         accuseMode = !accuseMode;
 
         if (accuseMode){
-            accuseButton.setStyle("-fx-background-color: #572b0b; -fx-border-color: #1a0902; -fx-border-radius: 16; -fx-border-width: 4; -fx-background-radius: 32");
+            accuseButton.setStyle("-fx-background-color: #ce2d38; -fx-border-color: #1a0902; -fx-border-radius: 16; -fx-border-width: 4; -fx-background-radius: 32");
+            // Create a DropShadow effect with a white color
+            DropShadow haloEffect = new DropShadow();
+            haloEffect.setColor(Color.RED);
+            haloEffect.setRadius(20); // Set the radius according to your preference
+            imageHolder1.setEffect(haloEffect);
+            imageHolder2.setEffect(haloEffect);
+            imageHolder3.setEffect(haloEffect);
+            imageHolder4.setEffect(haloEffect);
+            suspect1Name.setTextFill(Color.RED);
+            suspect2Name.setTextFill(Color.RED);
+            suspect3Name.setTextFill(Color.RED);
+            suspect4Name.setTextFill(Color.RED);
         }
         else{
             accuseButton.setStyle("-fx-background-color: #965238; -fx-border-color: #1a0902; -fx-border-radius: 16; -fx-border-width: 4; -fx-background-radius: 32");
@@ -266,6 +278,18 @@ public class susViewController  {
             suspect2Button.setCursor(Cursor.DEFAULT);
             suspect3Button.setCursor(Cursor.DEFAULT);
             suspect4Button.setCursor(Cursor.DEFAULT);
+            // Create a DropShadow effect with a white color
+            DropShadow haloEffect = new DropShadow();
+            haloEffect.setColor(Color.WHITE);
+            haloEffect.setRadius(20); // Set the radius according to your preference
+            imageHolder1.setEffect(haloEffect);
+            imageHolder2.setEffect(haloEffect);
+            imageHolder3.setEffect(haloEffect);
+            imageHolder4.setEffect(haloEffect);
+            suspect1Name.setTextFill(Color.WHITE);
+            suspect2Name.setTextFill(Color.WHITE);
+            suspect3Name.setTextFill(Color.WHITE);
+            suspect4Name.setTextFill(Color.WHITE);
         }
     }
 
