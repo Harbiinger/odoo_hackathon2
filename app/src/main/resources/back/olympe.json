@@ -135,8 +135,8 @@
         ]
       },
       {
-        "lastName": "Cetefares",
-        "firstName": "Cetefaran",
+        "lastName": "Cetefaran",
+        "firstName": "Cetefares",
         "profession": "Chariot racer",
         "nationality": "Greek",
         "isGuilty": false,
@@ -216,8 +216,8 @@
         ]
       },
       {
-        "lastName": "Ariu",
-        "firstName": "Juar",
+        "lastName": "Juar",
+        "firstName": "Ariu",
         "profession": "Chariot racer",
         "nationality": "Indian",
         "isGuilty": false,
@@ -327,8 +327,8 @@
         ]
       },
       {
-        "lastName": "Yapadelis",
-        "firstName": "Elaselakelos",
+        "lastName": "Elaselakelos",
+        "firstName": "Yapadelis",
         "profession": "Chariot racer",
         "nationality": "Greek",
         "isGuilty": false,
