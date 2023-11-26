@@ -3,8 +3,9 @@
       {
         "lastName": "Stot",
         "firstName": "Harry",
-        "profession": "Cyclist",
+        "profession": "Chariot racer",
         "nationality": "Greek",
+        "isGuilty": false,
         "interactions" : [
           {
             "id": 0,
@@ -134,10 +135,11 @@
         ]
       },
       {
-        "lastName": "Cless",
-        "firstName": "Perry",
-        "profession": "Cyclist",
-        "nationality": "Macedonian",
+        "lastName": "Cetefares",
+        "firstName": "Cetefaran",
+        "profession": "Chariot racer",
+        "nationality": "Greek",
+        "isGuilty": false,
         "interactions" : [
           {
             "id": 0,
@@ -214,10 +216,11 @@
         ]
       },
       {
-        "lastName": "Sius",
-        "firstName": "Confus",
-        "profession": "Cyclist",
-        "nationality": "Chinese",
+        "lastName": "Ariu",
+        "firstName": "Juar",
+        "profession": "Chariot racer",
+        "nationality": "Indian",
+        "isGuilty": false,
         "interactions": [
           {
             "id": 0,
@@ -324,10 +327,11 @@
         ]
       },
       {
-        "lastName": "Meh",
-        "firstName": "Mao",
-        "profession": "Cyclist",
-        "nationality": "Saudi Arabian",
+        "lastName": "Yapadelis",
+        "firstName": "Elaselakelos",
+        "profession": "Chariot racer",
+        "nationality": "Greek",
+        "isGuilty": false,
         "interactions": [
           {
             "id": 0,
