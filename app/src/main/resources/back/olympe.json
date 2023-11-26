@@ -5,69 +5,53 @@
         "firstName": "Harry",
         "profession": "Chariot racer",
         "nationality": "Greek",
+        "description": "",
         "isGuilty": false,
         "interactions" : [
           {
             "id": 0,
-            "text" : "Privet ! Me no cheating, me training whole life to serve motherland.",
+            "text" : "TODO",
             "choices": [
               {
                 "id": 0,
                 "interactionDir" : 1,
-                "value" : "You seem to be defensive. Why are you stressed ?",
+                "value" : "Did you witness anything during or prior the race ?",
                 "isLocked" : false
               },
               {
                 "id": 1,
-                "interactionDir" : 2,
-                "value" : "Why did you participate in these olympic games ?",
-                "isLocked" : false
-              },
-              {
-                "id": 2,
-                "interactionDir" : 3,
-                "value" : "What is your final ranking ?",
-                "isLocked" : false
-              },
-              {
-                "id": 3,
-                "interactionDir" : 4,
-                "value" : "Do you have information about potential cheaters during the event ?",
-                "event": {
-                  "name": "Ackermann",
-                  "interactionId": 0,
-                  "choiceId": 1
-                },
-                "isLocked" : false
-              },
-              {
-                "id" : 4,
                 "interactionDir" : -1,
-                "value" : "Thanks for your time [leave]",
+                "value" : "I'll see you later. [leave]",
                 "isLocked" : false
               }
             ]
           },
           {
             "id" : 1,
-            "text" : "I'm not stressed ! You have no right to accuse me ! I passed all the anti-doping tests. Russia have always been honest. Not like other countries...",
+            "text" : "Not really except for that incredible run Yapadelis' horse made. The beast was as fast as Hermes for a moment.",
             "choices" : [
               {
-                "id" : 5,
-                "interactionDir" : 5,
-                "value" : "What do you mean ? You think other countries are dishonest ?",
+                "id" : 0,
+                "interactionDir" : 2,
+                "value" : "How is it possible ?",
                 "isLocked" : false
+              },
+              {
+                "id": 0,
+                "interactionDir": -1,
+                "value": "Thank you. [leave]",
+                "isLocked": false
               }
             ]
           },
           {
             "id" : 2,
-            "text" : "Me had no choice. I have always been good at cycling. I was convinced to represent my country.",
+            "text" : "I don't Know but I would like discover his secret.",
             "choices" : [
               {
-                "id" : 6,
-                "interactionDir" : 6,
-                "value" : "What would happen to you if you came home without a medal ?",
+                "id" : 0,
+                "interactionDir" : -1,
+                "value" : "[leave]",
                 "isLocked" : false
               }
             ]
@@ -139,26 +123,21 @@
         "firstName": "Cetefares",
         "profession": "Chariot racer",
         "nationality": "Greek",
+        "description": "",
         "isGuilty": false,
         "interactions" : [
           {
             "id": 0,
-            "text": "Hallo, Are you here for an autograph from today's winner? Hahaha just jokin' what d' you want ?",
+            "text": "TODO",
             "choices": [
               {
                 "id": 0,
                 "interactionDir": 1,
-                "value": "Congratulations for your first place you must be very proud",
+                "value": "How was your race ?",
                 "isLocked": false
               },
               {
                 "id": 1,
-                "interactionDir": 2,
-                "value": "Have you heard rumors about cheaters during these Olympics Games ?",
-                "isLocked": false
-              },
-              {
-                "id": 2,
                 "interactionDir": -1,
                 "value": "Bye. [leave]",
                 "isLocked": false
@@ -167,93 +146,12 @@
           },
           {
             "id": 1,
-            "text": "Yeees indeed I am. You would be too if you were me. Imagine how it feels to finally win after years of trainin'. In fact I started trainin' when I was very young. I still remember that time when I trained during 12 hours straight.",
-            "choices": [
-              {
-                "id": 0,
-                "interactionDir": 3,
-                "value": "Who?",
-                "isLocked": false
-              }
-            ]
-          },
-          {
-            "id": 2,
-            "text": "Cheaters? Olympics Games are a noble event, I don't think any participant would dare to cheat. This idea seems ridiculous to me.",
-            "choices": [
-              {
-                "id": 0,
-                "interactionDir": 0,
-                "value": "Ok that's what i thought.",
-                "isLocked": false
-              }
-            ]
-          },
-          {
-            "id": 3,
-            "text": "What? Me.",
-            "choices": [
-              {
-                "id": 0,
-                "interactionDir": 4,
-                "value": "Who asked ?",
-                "isLocked": false
-              }
-            ]
-          },
-          {
-            "id": 4,
-            "text": "......",
-            "choices": [
-              {
-                "id": 0,
-                "interactionDir": -1,
-                "value": "[leave]",
-                "isLocked": false
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "lastName": "Juar",
-        "firstName": "Ariu",
-        "profession": "Chariot racer",
-        "nationality": "Indian",
-        "isGuilty": false,
-        "interactions": [
-          {
-            "id": 0,
-            "text": "Ciao what do you want from me ?",
-            "choices": [
-              {
-                "id": 0,
-                "interactionDir": 1,
-                "value": "Have you ever participated in the Olympics Games?",
-                "isLocked": false
-              },
-              {
-                "id": 1,
-                "interactionDir": 5,
-                "value": "Do you think someone could have cheat during the competition ?",
-                "isLocked": false
-              },
-              {
-                "id": 2,
-                "interactionDir": -1,
-                "value": "Nothing, thank you. [leave]",
-                "isLocked": false
-              }
-            ]
-          },
-          {
-            "id": 1,
-            "text": "No it was my first competing in an international competition. An unforgettable experience if you want my feedback.",
+            "text": "I finished first so pretty good",
             "choices": [
               {
                 "id": 0,
                 "interactionDir": 2,
-                "value": "You did very well for a first experience. Third place it's not easy for everyone.",
+                "value": "What was your strategy ?",
                 "isLocked": false
               },
               {
@@ -266,60 +164,52 @@
           },
           {
             "id": 2,
-            "text": "Yes of course you're right. It was far from free, I had to train a lot to achieve this result. But I'm convinced that hard work can lead you to incredible performances.",
+            "text": "I won't tell my secrets.",
             "choices": [
               {
                 "id": 0,
-                "interactionDir": 3,
-                "value": "Cheating can too",
+                "interactionDir": -1,
+                "value": "Bye. [leave]",
+                "isLocked": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "lastName": "Juar",
+        "firstName": "Ariu",
+        "profession": "Chariot racer",
+        "nationality": "Indian",
+        "description": "",
+        "isGuilty": false,
+        "interactions": [
+          {
+            "id": 0,
+            "text": "TODO",
+            "choices": [
+              {
+                "id": 0,
+                "interactionDir": 1,
+                "value": "We're convinced someone cheated during the event. Do you have any information ?",
                 "isLocked": false
               },
               {
                 "id": 1,
-                "interactionDir": 4,
-                "value": "How long have you trained ?",
-                "isLocked": false
-              },
-              {
-                "id": 2,
                 "interactionDir": -1,
-                "value": "Thank you for your time [leave]",
+                "value": "See you later. [leave]",
                 "isLocked": false
               }
             ]
           },
           {
-            "id": 3,
-            "text": "Yes but I hate cheating I would never consider it.",
+            "id": 1,
+            "text": "I don't know and if you don't know I don't know no ?",
             "choices": [
               {
                 "id": 0,
                 "interactionDir": -1,
-                "value": "Interesting, thank you. [leave]",
-                "isLocked": false
-              }
-            ]
-          },
-          {
-            "id": 4,
-            "text": "Since I started from nothing it took me 4 years to be ready",
-            "choices": [
-              {
-                "id": 0,
-                "interactionDir": -1,
-                "value": "Interesting, thank you. [leave]",
-                "isLocked": false
-              }
-            ]
-          },
-          {
-            "id": 5,
-            "text": "Mmmh to be honest yes, it is definitely a possibility. The controls were were not that strict. Someone could have smuggle cheating materials into the lock-rooms",
-            "choices": [
-              {
-                "id": 0,
-                "interactionDir": -1,
-                "value": "That would be all, thank you [leave]",
+                "value": "[leave]",
                 "isLocked": false
               }
             ]
@@ -331,22 +221,53 @@
         "firstName": "Yapadelis",
         "profession": "Chariot racer",
         "nationality": "Greek",
+        "description": "",
         "isGuilty": false,
         "interactions": [
           {
             "id": 0,
-            "text": "Hello there",
+            "text": "TODO",
             "choices": [
               {
                 "id": 0,
-                "interactionDir": -1,
-                "value": "General kenobi [leave]",
+                "interactionDir": 1,
+                "value": "Did you witness any strange behavior among your opponents? ",
                 "isLocked": false
               },
               {
                 "id": 1,
+                "interactionDir": 2,
+                "value": "Yes, your chariot shattered... How did that happened ?",
+                "isLocked": false
+              },
+              {
+                "id": 2,
                 "interactionDir": -1,
-                "value": "oui",
+                "value": "See you later. [leave]",
+                "isLocked": false
+              }
+            ]
+          },
+          {
+            "id": 1,
+            "text": "No I think it was a fair race. An unlucky one for me but fair.",
+            "choices": [
+              {
+                "id": 0,
+                "interactionDir": -1,
+                "value": "Thank you. [leave]",
+                "isLocked": true
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "text": "My horse got too fast and I just lost control",
+            "choices": [
+              {
+                "id": 0,
+                "interactionDir": -1,
+                "value": "Tank you [leave]",
                 "isLocked": true
               }
             ]

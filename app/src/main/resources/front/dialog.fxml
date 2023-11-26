@@ -41,7 +41,7 @@
                         <Font size="21.0" />
                      </font>
                   </Label>
-                  <Label fx:id="suspectDesc" alignment="TOP_CENTER" contentDisplay="CENTER" prefHeight="195.0" prefWidth="288.0" wrapText="true">
+                  <Label fx:id="suspectDesc" alignment="TOP_CENTER" prefHeight="195.0" prefWidth="288.0" wrapText="true">
                      <VBox.margin>
                         <Insets top="8.0" />
                      </VBox.margin>
