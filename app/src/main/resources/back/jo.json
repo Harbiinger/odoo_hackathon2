@@ -46,10 +46,10 @@
               "isLocked": false
             },
             {
-              "id" : 4,
-              "interactionDir" : -1,
-              "value" : "Thanks for your time [leave]",
-              "isLocked" : false
+                "id": 5,
+                "interactionDir" : 8,
+                "value" : "Did you know it was possible to smuggle items into the locker-room ?",
+                "isLocked" : true
             }
           ]
         },
@@ -136,6 +136,18 @@
                 "isLocked" : false
             }
           ]
+        },
+        {
+            "id" : 8,
+            "text" : "Yes I saw the Dutch trying to hide electronics stuff into the room. These guys are really good with electronics but they sell it at a very high price",
+            "choices" : [
+                {
+                    "id" : 0,
+                    "interactionDir" : 0,
+                    "value" : "Back to previous choices",
+                    "isLocked" : false
+                }
+            ]
         }
       ]
     },
@@ -354,7 +366,16 @@
               "id": 0,
               "interactionDir": 0,
               "value": "[Back to previous choices]",
-              "isLocked": false
+              "isLocked": false,
+              "events" : [
+                  {
+                    "id" : 0,
+                    "name" : "Trovitchi",
+                    "unlock" : true,
+                    "interactionId" : 0,
+                    "choiceId" : 5
+                  }
+              ]
             }
           ]
         }
@@ -398,7 +419,14 @@
         {
           "id": 1,
           "text": "Mmh yeah could be. I heard security was not great this year.",
-          "choices": []
+          "choices": [
+            {
+              "id": 0,
+              "interactionDir": -1,
+              "value": "Thank you. [leave]",
+              "isLocked": false
+            }
+          ]
         }
       ]
     }
