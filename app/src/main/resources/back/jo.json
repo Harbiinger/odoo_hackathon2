@@ -5,6 +5,7 @@
       "firstName": "Kipet",
       "profession": "Cyclist",
       "nationality": "Russian",
+      "description": "He's very patriotic and has an angry face, he's very aggressive in the way he responds and stays on the defensive.",
       "isGuilty": false,
       "interactions" : [
         {
@@ -143,6 +144,7 @@
       "firstName": "Bjorn",
       "profession": "Cyclist",
       "nationality": "Dutch",
+      "description": "Bjorn Seam is a hedonist, always happy, always smiling from ear to ear. Very nice, but a real pain in the arse.",
       "isGuilty": false,
       "interactions" : [
         {
@@ -224,6 +226,7 @@
       "firstName": "Marcello",
       "profession": "Cyclist",
       "nationality": "Italian",
+      "description": "Marcello comes from the town of Inferno in Italy. He used to sell bananas from his flat before starting his sporting career. He's a businessman, always looking for loopholes in the rules to exploit.",
       "isGuilty": false,
       "interactions": [
         {
@@ -362,6 +365,7 @@
       "firstName": "Karl",
       "profession": "Cyclist",
       "nationality": "German",
+      "description": "Karl Ackermann was gold medallist at the previous edition of the Olympics Games. He is therefore very disappointed with his performance. After several years in first place, you can imagine that Karl wanted to give it his all to stay there.",
       "isGuilty": true,
       "interactions": [
         {

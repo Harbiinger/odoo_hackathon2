@@ -228,8 +228,11 @@ public class dialogController implements Initializable {
         suspectNameLabel.setText(currentPerson.getFirstName() + " " + currentPerson.getLastName());
         suspectNameLabel.setTextFill(Color.WHITE);
         suspectNameLabel.setFont(Font.font("Arial", FontWeight.BOLD, 18));
+        suspectDesc.setText(currentPerson.getNationality() + "\n" +
+                currentPerson.getDescription());
+        suspectDesc.setTextFill(Color.WHITE);
+        suspectDesc.setFont(Font.font("Arial", FontWeight.BOLD, 16));
         suspectPicture.setImage(new Image("/front/"+currentPerson.getFirstName()+".png"));
         suspectPicture.setEffect(haloEffect);
-        suspectDesc.setText("");
     }
 }
