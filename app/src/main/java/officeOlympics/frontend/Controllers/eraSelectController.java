@@ -47,7 +47,7 @@ public class eraSelectController {
         App.game = new Game("olympe.json");
         App.peopleList = App.game.getPersons();
         App.objectsList.clear();
-        Object coca = new Object("coca", "Coca leaf found in Yapadelis' stuff.");
+        Object coca = new Object("coca", "Coca leaves found in Yapadelis' stuff.");
         App.objectsList.add(coca);
         URL url = App.class.getResource("/front/susView.fxml");
         pane = FXMLLoader.load(url);

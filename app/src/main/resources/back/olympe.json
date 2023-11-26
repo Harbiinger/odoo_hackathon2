@@ -10,7 +10,7 @@
         "interactions" : [
           {
             "id": 0,
-            "text" : "TODO",
+            "text" : "Hi there.",
             "choices": [
               {
                 "id": 0,
@@ -128,7 +128,7 @@
         "interactions" : [
           {
             "id": 0,
-            "text": "TODO",
+            "text": "Be quick I have other matters to take care of.",
             "choices": [
               {
                 "id": 0,
@@ -186,7 +186,7 @@
         "interactions": [
           {
             "id": 0,
-            "text": "TODO",
+            "text": "Can I help you ?",
             "choices": [
               {
                 "id": 0,
@@ -226,7 +226,7 @@
         "interactions": [
           {
             "id": 0,
-            "text": "TODO",
+            "text": "The gods were with me this time.",
             "choices": [
               {
                 "id": 0,
