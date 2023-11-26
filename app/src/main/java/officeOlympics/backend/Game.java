@@ -35,6 +35,7 @@ public class Game {
                 String firstName = personNode.get("firstName").asText();
                 String profession = personNode.get("profession").asText();
                 String nationality = personNode.get("nationality").asText();
+                boolean isGuilty = personNode.get("isGuilty").asBoolean();
 
                 ArrayList<Interaction> interactions = new ArrayList<>();
 
@@ -70,7 +71,7 @@ public class Game {
                     interactions.add(new Interaction(interactionId, choices, interactionText));
                 }
 
-                Person person = new Person(lastName, nationality, firstName, profession,interactions);
+                Person person = new Person(lastName, nationality, firstName, profession,interactions, isGuilty);
                 people.put(person.getLastName(), person);
             }
         } catch (Exception e) {

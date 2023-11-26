@@ -6,6 +6,7 @@ import java.net.URL;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Cursor;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -21,6 +22,7 @@ import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
 import javafx.stage.Stage;
 import officeOlympics.App;
+import officeOlympics.backend.Person;
 
 
 public class susViewController  {
@@ -29,6 +31,8 @@ public class susViewController  {
     private Scene scene;
     private Parent pane;
     private ActionEvent actionEvent;
+
+    private boolean accuseMode = false;
     
 
     @FXML
@@ -76,8 +80,11 @@ public class susViewController  {
     @FXML
     private Label suspect4Name;
 
+    @FXML
+    private Button accuseButton;
 
-    public void initialize() {
+
+    public void initialize(){
         // bg
         susBackground.setImage(new Image("/front/"+ App.mode+"Background.png"));
         BoxBlur blur = new BoxBlur(7, 7, 3);
@@ -113,41 +120,73 @@ public class susViewController  {
         suspect4Name.setTextFill(Color.WHITE);
         suspect4Name.setFont(Font.font("Arial", FontWeight.BOLD, 18));
 
+
+        accuseButton.setOnAction(actionEvent1 -> {
+            try {
+                switchAccuseMode(actionEvent1);
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+        });
+
+
+
     }
 
-    public void talkTo1() {
+    public void talkTo1() throws IOException {
         App.currentPerson = App.peopleList.get(0);
-        try {
-            goToDialog();
-        } catch (Exception e) {
-            e.printStackTrace();
+        if (accuseMode){
+            checkIfGuilty(App.currentPerson);
+        }
+        else {
+            App.currentPerson = App.peopleList.get(0);
+            try {
+                goToDialog();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
         }
     }
 
-    public void talkTo2() {
+    public void talkTo2() throws IOException {
         App.currentPerson = App.peopleList.get(1);
-        try {
-            goToDialog();
-        } catch (Exception e) {
-            e.printStackTrace();
+        if (accuseMode){
+            checkIfGuilty(App.currentPerson);
+        }
+        else {
+            try {
+                goToDialog();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
         }
     }
 
-    public void talkTo3() {
+    public void talkTo3() throws IOException {
         App.currentPerson = App.peopleList.get(2);
-        try {
-            goToDialog();
-        } catch (Exception e) {
-            e.printStackTrace();
+        if (accuseMode) {
+            checkIfGuilty(App.currentPerson);
+        }
+        else {
+            try {
+                goToDialog();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
         }
     }
 
-    public void talkTo4() {
+    public void talkTo4() throws IOException {
         App.currentPerson = App.peopleList.get(3);
-        try {
-            goToDialog();
-        } catch (Exception e) {
-            e.printStackTrace();
+        if (accuseMode){
+            checkIfGuilty(App.currentPerson);
+        }
+        else {
+            try {
+                goToDialog();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
         }
     }
 
@@ -157,6 +196,29 @@ public class susViewController  {
 
     public void switchAccuseMode() {
         App.accuseMode = !App.accuseMode;
+    }
+
+    public void checkIfGuilty(Person person) throws IOException {
+        if (person.isGuilty()){
+            System.out.println("You win");
+
+            URL url = App.class.getResource("/front/win.fxml");
+            pane = FXMLLoader.load(url);
+            stage = App.stage;
+            scene = new Scene(pane);
+            stage.setScene(scene);
+            stage.show();
+
+        }
+        else{
+            System.out.println("You lose");
+            URL url = App.class.getResource("/front/lose.fxml");
+            pane = FXMLLoader.load(url);
+            stage = App.stage;
+            scene = new Scene(pane);
+            stage.setScene(scene);
+            stage.show();
+        }
     }
 
     public void backToEraSelection(ActionEvent actionEvent) throws IOException {
@@ -184,6 +246,22 @@ public class susViewController  {
         scene = new Scene(pane);
         stage.setScene(scene);
         stage.show();
+    }
+
+    public void switchAccuseMode(ActionEvent actionEvent) throws IOException {
+        accuseMode = !accuseMode;
+
+        if (accuseMode){
+            accuseButton.setStyle("-fx-background-color: #572b0b; -fx-border-color: #1a0902; -fx-border-radius: 16; -fx-border-width: 4; -fx-background-radius: 32");
+        }
+        else{
+            accuseButton.setStyle("-fx-background-color: #965238; -fx-border-color: #1a0902; -fx-border-radius: 16; -fx-border-width: 4; -fx-background-radius: 32");
+            accuseButton.setCursor(Cursor.DEFAULT);
+            suspect1Button.setCursor(Cursor.DEFAULT);
+            suspect2Button.setCursor(Cursor.DEFAULT);
+            suspect3Button.setCursor(Cursor.DEFAULT);
+            suspect4Button.setCursor(Cursor.DEFAULT);
+        }
     }
 
 

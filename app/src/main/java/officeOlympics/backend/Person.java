@@ -13,15 +13,18 @@ public class Person {
     @JsonProperty("profession")
     private String profession;
     private String nationality;
+    @JsonProperty("isGuilty")
+    private boolean isGuilty;
     private int currentInteraction;
     private ArrayList<Interaction> interactions;
 
-    public Person(String lastName,String nationality ,String firstName, String profession ,ArrayList<Interaction> interactions) {
+    public Person(String lastName,String nationality ,String firstName, String profession ,ArrayList<Interaction> interactions, boolean isGuilty) {
         this.lastName = lastName;
         this.firstName = firstName;
         this.profession = profession;
         this.interactions = interactions;
         this.nationality = nationality;
+        this.isGuilty = isGuilty;
         currentInteraction = 0;
     }
 
@@ -39,6 +42,10 @@ public class Person {
 
     public String getProfession() {
         return profession;
+    }
+
+    public boolean isGuilty() {
+        return isGuilty;
     }
 
     /**

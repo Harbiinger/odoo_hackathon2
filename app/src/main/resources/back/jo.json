@@ -5,6 +5,7 @@
       "firstName": "Kipet",
       "profession": "Cyclist",
       "nationality": "Russian",
+      "isGuilty": false,
       "interactions" : [
         {
           "id": 0,
@@ -142,6 +143,7 @@
       "firstName": "Bjorn",
       "profession": "Cyclist",
       "nationality": "Dutch",
+      "isGuilty": false,
       "interactions" : [
         {
           "id": 0,
@@ -222,6 +224,7 @@
       "firstName": "Marcello",
       "profession": "Cyclist",
       "nationality": "Italian",
+      "isGuilty": false,
       "interactions": [
         {
           "id": 0,
@@ -332,6 +335,7 @@
       "firstName": "Karl",
       "profession": "Cyclist",
       "nationality": "German",
+      "isGuilty": true,
       "interactions": [
         {
           "id": 0,
