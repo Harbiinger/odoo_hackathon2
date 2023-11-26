@@ -29,7 +29,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Polygon>
-            <Label fx:id="objectFoundLabel" layoutX="981.0" layoutY="20.0" prefHeight="60.0" prefWidth="285.0" style="-fx-background-color: #965238; -fx-border-color: #FFF; -fx-border-radius: 16; -fx-border-width: 4; -fx-background-radius: 24;" text="You searched through Bjorn Seam's locker. An object has been added to the inventory" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+            <Label fx:id="objectFoundLabel" layoutX="981.0" layoutY="20.0" prefHeight="92.0" prefWidth="285.0" style="-fx-background-color: #965238; -fx-border-color: #FFF; -fx-border-radius: 16; -fx-border-width: 4; -fx-background-radius: 24;" text="You searched through Bjorn Seam's locker. An object has been added to the inventory" textAlignment="CENTER" textFill="WHITE" wrapText="true">
                <font>
                   <Font name="Arial Bold" size="14.0" />
                </font>
